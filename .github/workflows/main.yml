@@ -39,10 +39,6 @@ jobs:
         shell: bash
         run: mkdir -p ./content
 
-      - name: Create layout fix directory
-        shell: bash
-        run: mkdir -p layouts/_default/_markup/
-
       - name: Export Vault
         shell: bash
         run: obsidian-export ./vault ./content
