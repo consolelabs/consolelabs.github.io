@@ -47,6 +47,10 @@ jobs:
         shell: bash
         run: hugo --minify
 
+      - name: Remove git submodules from being pulled on GH Pages
+        shell: bash
+        run: rm .gitmodules
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
