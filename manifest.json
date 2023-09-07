@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Console Labs",
+  "short_name": "Console Labs",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
