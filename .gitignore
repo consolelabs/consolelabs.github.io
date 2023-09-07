@@ -19,3 +19,7 @@
 
 # Go workspace file
 go.work
+
+# hugo dev-related files
+resources
+.hugo_build.lock
