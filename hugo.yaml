@@ -1,3 +1,5 @@
+baseURL: https://consolelabs.github.io
+title: Console Labs
 module:
   imports:
   - path: github.com/alex-shpak/hugo-book
