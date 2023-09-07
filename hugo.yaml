@@ -4,5 +4,3 @@ module:
     disable: false
   - path: github.com/adityatelange/hugo-PaperMod
     disable: false
-  - path: github.com/milafrerichs/hugo-wikilinks
-    disable: false
