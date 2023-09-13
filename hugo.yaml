@@ -6,3 +6,5 @@ module:
     disable: false
   - path: github.com/adityatelange/hugo-PaperMod
     disable: false
+  - path: github.com/mismith0227/hugo_theme_pickles
+    disable: false
