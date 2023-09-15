@@ -10,20 +10,23 @@ enableGitInfo = true
   paginator_pages = "10"
   #custom_css = ["/css/custom.css"]
 
-[[menu.main]]
-    name = "Blog"
-    url = "/"
-    weight = 1
+  [params.assets]
+    disableHLJS: true
 
 [[menu.main]]
-    name = "About"
-    url = "/about"
-    weight = 2
+  name = "Blog"
+  url = "/"
+  weight = 1
 
 [[menu.main]]
-    name = "Playbook"
-    url = "/playbook"
-    weight = 3
+  name = "About"
+  url = "/about"
+  weight = 2
+
+[[menu.main]]
+  name = "Playbook"
+  url = "/playbook"
+  weight = 3
 
 [related]
   # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
@@ -36,16 +39,16 @@ enableGitInfo = true
   toLower = false
 
   [[related.indices]]
-  name  = "author"
-  toLower = true
-  weight = 30
+    name  = "author"
+    toLower = true
+    weight = 30
   [[related.indices]]
-  name  = "tags"
-  weight = 100
+    name  = "tags"
+    weight = 100
   [[related.indices]]
-  name  = "date"
-  weight = 10
-  pattern = "2017"
+    name  = "date"
+    weight = 10
+    pattern = "2017"
 
 [markup]
     [markup.tableOfContents]
@@ -64,7 +67,7 @@ enableGitInfo = true
         lineNumbersInTable = true
         style = "dracula"
     [frontmatter]
-        lastmod = ["lastmod", ":git", "date", "publishDate"]
         publishDate = ["publishDate", "date"]
+        authors = ["authors"]
     [markup.goldmark.renderer]
         unsafe = true

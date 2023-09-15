@@ -3,17 +3,30 @@ body {
   color: white;
   text-rendering: optimizeLegibility;
   padding: 2rem;
-  max-width: 70ch;
-  margin: 0;
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
   background-color: #000;
 }
-h1,h2,h3,h4,h5{
-  font-size: inherit;
-  font-weight: inherit;
-  text-decoration: underline;
+nav {
+  float: left;
+  padding: 45px;
+}
+article {
+  padding: 45px;
+}
+header {
+  padding: 45px;
+  border-bottom: 1px solid #222;
+}
+header a img {
+  filter: invert(1);
 }
 header h1 {
   display: inline;
+}
+footer {
+  padding: 45px;
 }
 pre, code {
   font-size: inherit;
@@ -38,12 +51,9 @@ code {
   font-variant-numeric: tabular-nums;
 }
 .home ul li a {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-ul, ol {
-  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 time {
   padding-right: 1rem

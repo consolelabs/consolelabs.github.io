@@ -2,15 +2,8 @@
   "version": "https://jsonfeed.org/version/1",
   "title": "{{ .Site.Title }}",
   "home_page_url": "{{ .Site.BaseURL }}",
-  "feed_url": "https://ronaldsvilcins.com/feed.json",
   "description": "{{ .Site.Params.description }}",
-  "icon": "https://ronaldsvilcins.com/assets/apple-touch-icon.png",
-  "favicon": "https://ronaldsvilcins.com/assets/favicon.ico",
   "expired": false,
-  "author": {
-    "name": "Ronalds Vilcins",
-    "url": "https://ronaldsvilcins.com/"
-  },
   "items": [
     {{ $list := (where .Site.RegularPages "Section" "writing") }}
     {{ $len := (len $list) }}
@@ -23,14 +16,10 @@
       "content_text": {{ .Content | plainify | jsonify }},
       "content_html": {{ .Content | jsonify }},
       "url": {{ .Permalink | jsonify }},
-      "image": "{{ .Site.BaseURL }}photos/{{ .Params.photo }}",
-      "banner_image": "{{ .Site.BaseURL }}photos/{{ .Params.photo }}",
+      "image": "{{ .Site.BaseURL }}img/{{ .Params.photo }}",
+      "banner_image": "{{ .Site.BaseURL }}img/{{ .Params.photo }}",
       "date_published": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}",
-      "date_modified": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}",
-      "author": {
-        "name": "Ronalds Vilcins",
-        "url": "https://ronaldsvilcins.com/"
-      }
+      "date_modified": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}"
     }{{ if ne (add $index 1) $len }},{{ end }}
     {{ end }}
   ]

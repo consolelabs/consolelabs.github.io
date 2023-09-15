@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Ronalds Vilcins - {{ .Site.BaseURL }}">
+    {{ $favicon := resources.Get "favicon.ico" }}
+    {{ $favicon16 := resources.Get "favicon-16x16.png" }}
+    {{ $favicon32 := resources.Get "favicon-32x32.png" }}
+    {{ $appleTouchIcon := resources.Get "apple-touch-icon.png" }}
+    <link rel="icon" type="image/x-icon" href="{{ $favicon.Permalink }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon16.Permalink }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon32.Permalink }}">
+    <link rel="apple-touch-icon" href="{{ $appleTouchIcon.Permalink }}">
   <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="canonical" href="{{ .Permalink | absURL }}">
@@ -86,10 +94,11 @@
   {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
   <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}">
     <header>
-{{ if .IsHome }}
-<h1><a href="/">{{ .Site.Title }}</a></h1>{{ else }}
-<h1><a href="/">{{ .Site.Title }}</a></h1> / <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-{{ end }}
+        {{ $image := resources.Get "img/ConsoleLabs_logo.png" }}
+        <a href="/">
+            <img src="{{ $image.Permalink }}" alt="ConsoleLabs" height="100px" style="margin:-28px -25px;">
+        </a>
     </header>
 
     <article>
+        <a href="/">{{ .Site.Title }}</a> / <a href="{{ .RelPermalink }}">{{ .Title }}</a>
