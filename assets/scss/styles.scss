@@ -14,6 +14,7 @@ nav {
 }
 article {
   padding: 45px;
+  max-width: 700px;
 }
 header {
   padding: 45px;
@@ -30,7 +31,7 @@ footer {
 }
 pre, code {
   font-size: inherit;
-  background: #eee;
+  background: #333;
 }
 pre {
   margin-bottom: 2rem;
@@ -43,12 +44,16 @@ pre code {
   overflow-x: auto;
 }
 code {
-  background: #eee;
+  background: #333;
 }
 .writing ul li, .home ul li {
   list-style-type: none;
   display: flex;
   font-variant-numeric: tabular-nums;
+}
+li:has(input[type="checkbox"]) {
+  display: block;
+  list-style-type: none;
 }
 .home ul li a {
   white-space: nowrap;
