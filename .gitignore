@@ -24,3 +24,5 @@ go.work
 resources
 .hugo_build.lock
 vault/
+public/*
+!public/CNAME
