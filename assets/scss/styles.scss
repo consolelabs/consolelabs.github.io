@@ -1,5 +1,8 @@
+/*
+  Main
+*/
 body {
-  font: 17px/1.6 sans-serif;
+  font: 16px sans-serif;
   color: white;
   text-rendering: optimizeLegibility;
   padding: 2rem;
@@ -8,13 +11,56 @@ body {
   padding: 0px;
   background-color: #000;
 }
-nav {
+
+/*
+  Navigation Menu
+*/
+nav.menu {
   float: left;
   padding: 45px;
+  max-width: 200px;
 }
+nav .site-nav {
+  margin: 20px 0 20px 0;
+  display: block;
+}
+nav .site-nav section {
+  float: left;
+  margin: 0px 10px;
+  max-width: 200px;
+}
+nav .site-nav section h2 {
+  margin: 20px 0 20px 0;
+}
+nav.menu details summary {
+  margin-bottom: 30px;
+}
+@media (max-width: 1100px) {
+  nav.menu {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1100px) and (min-width: 651px) {
+  nav .site-nav section {
+    width: calc(25% - 10px);
+  }
+}
+nav.menu ul {
+  padding: 0px 10px 10px 0px;
+  margin: 0px;
+  list-style-type: none;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+/*
+  Header, article and footer
+*/
 article {
   padding: 45px;
   max-width: 700px;
+  float: left;
 }
 header {
   padding: 45px;
@@ -28,6 +74,7 @@ header h1 {
 }
 footer {
   padding: 45px;
+  clear: both;
 }
 pre, code {
   font-size: inherit;
@@ -46,7 +93,7 @@ pre code {
 code {
   background: #333;
 }
-.writing ul li, .home ul li {
+ul li {
   list-style-type: none;
   display: flex;
   font-variant-numeric: tabular-nums;
@@ -55,7 +102,10 @@ li:has(input[type="checkbox"]) {
   display: block;
   list-style-type: none;
 }
-.home ul li a {
+ul:has(li input[type="checkbox"]) {
+  padding: 0px;
+}
+ul li a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

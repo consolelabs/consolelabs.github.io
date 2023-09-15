@@ -1,8 +1,37 @@
 <nav class="menu">
-  <ul>
-  {{ $currentPage := . }}
-  {{ range (default .Site.Menus.main (index .Site.Menus ($.Scratch.Get "section"))) }}
-  <li{{ if eq .URL $currentPage.RelPermalink }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
-  {{ end }}
-  </ul>
+  <details open>
+    <summary>
+      Menu
+    </summary>
+    <section class="site-nav">
+      <section>
+        <ul>
+        {{ $currentPage := .Sites.First.Home }}
+        {{ range .Site.Menus.main }}
+        <li{{ if eq .URL $currentPage.RelPermalink }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+        </ul>
+      </section>
+
+      <section>
+        <h2>playbook</h2>
+        <ul>
+        {{ $currentPage := .Sites.First.Home }}
+        {{ range .Site.Menus.playbook }}
+        <li{{ if eq .URL $currentPage.RelPermalink }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+        </ul>
+      </section>
+
+      <section>
+        <h2>log</h2>
+        <ul>
+        {{ $currentPage := .Sites.First.Home }}
+        {{ range .Site.Menus.log }}
+        <li{{ if eq .URL $currentPage.RelPermalink }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+        </ul>
+      </section>
+    </section>
+  </details>
 </nav>

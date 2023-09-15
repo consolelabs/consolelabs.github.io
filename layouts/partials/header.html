@@ -12,93 +12,95 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon16.Permalink }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon32.Permalink }}">
     <link rel="apple-touch-icon" href="{{ $appleTouchIcon.Permalink }}">
-  <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <link rel="canonical" href="{{ .Permalink | absURL }}">
-  <link rel="alternate" type="application/atom+xml" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}atom.xml" />
-  <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}feed.json" />
-  <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
-  {{ $styles := resources.Get "scss/styles.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
-  <style>{{ $styles.Content | safeCSS }}</style>
+    <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+    <link rel="canonical" href="{{ .Permalink | absURL }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}atom.xml" />
+    <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}feed.json" />
+    <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+    {{ $styles := resources.Get "scss/styles.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
+    <style>{{ $styles.Content | safeCSS }}</style>
 
-  {{ if .IsHome -}}
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "WebSite",
-    "name": "{{ .Site.Title }}",
-    "url": "{{ .Site.BaseURL }}",
-    "description": "{{ .Site.Params.description }}",
-    "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
-    "license": "{{ .Site.Params.Copyright }}"
-}
-</script>
-{{ else if .IsPage }}
-{{ $author :=  or (.Params.author) (.Site.Author.name) }}
-{{ $org_name :=  .Site.Title }}
-<script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "BlogPosting",
-    "articleSection": "{{ .Section }}",
-    "name": "{{ .Title | safeJS }}",
-    "headline": "{{ .Title | safeJS }}",
-    "alternativeHeadline": "{{ .Params.lead }}",
-    "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
-    "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
-    "isFamilyFriendly": "true",
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ .Permalink }}"
-    },
-    "author" : {
-        "@type": "Person",
-        "name": "{{ $author }}"
-    },
-    "creator" : {
-        "@type": "Person",
-        "name": "{{ $author }}"
-    },
-    "accountablePerson" : {
-        "@type": "Person",
-        "name": "{{ $author }}"
-    },
-    "copyrightHolder" : "{{ $org_name }}",
-    "copyrightYear" : "{{ .Date.Format "2006" }}",
-    "date": "{{ .Date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "dateCreated": "{{ .Date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
-    "publisher":{
-        "@type":"Organization",
-        "name": {{ $org_name }},
-        "url": {{ .Site.BaseURL }},
-        "logo": {
-            "@type": "ImageObject",
-            "url": "{{ .Site.Params.logo | absURL }}",
-            "width":"32",
-            "height":"32"
+    {{ if .IsHome -}}
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "{{ .Site.Title }}",
+            "url": "{{ .Site.BaseURL }}",
+            "description": "{{ .Site.Params.description }}",
+            "thumbnailUrl": "{{ .Site.Params.Logo | absURL }}",
+            "license": "{{ .Site.Params.Copyright }}"
         }
-    },
-    "image": {{ if .Params.images }}[{{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e | absURL }}{{ end }}]{{ else}}{{.Site.Params.logo | absURL }}{{ end }},
-    "url" : "{{ .Permalink }}",
-    "wordCount" : "{{ .WordCount }}",
-    "genre" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}],
-    "keywords" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}]
-}
-</script>
-{{ end }}
+        </script>
+        {{ else if .IsPage }}
+        {{ $author :=  or (.Params.author) (.Site.Author.name) }}
+        {{ $org_name :=  .Site.Title }}
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BlogPosting",
+            "articleSection": "{{ .Section }}",
+            "name": "{{ .Title | safeJS }}",
+            "headline": "{{ .Title | safeJS }}",
+            "alternativeHeadline": "{{ .Params.lead }}",
+            "description": "{{ if .Description }}{{ .Description | safeJS }}{{ else }}{{if .IsPage}}{{ .Summary  }}{{ end }}{{ end }}",
+            "inLanguage": {{ .Site.LanguageCode | default "en-us" }},
+            "isFamilyFriendly": "true",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "{{ .Permalink }}"
+            },
+            "author" : {
+                "@type": "Person",
+                "name": "{{ $author }}"
+            },
+            "creator" : {
+                "@type": "Person",
+                "name": "{{ $author }}"
+            },
+            "accountablePerson" : {
+                "@type": "Person",
+                "name": "{{ $author }}"
+            },
+            "copyrightHolder" : "{{ $org_name }}",
+            "copyrightYear" : "{{ .Date.Format "2006" }}",
+            "date": "{{ .Date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+            "dateCreated": "{{ .Date.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+            "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+            "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05.00Z" | safeHTML }}",
+            "publisher":{
+                "@type":"Organization",
+                "name": {{ $org_name }},
+                "url": {{ .Site.BaseURL }},
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "{{ .Site.Params.logo | absURL }}",
+                    "width":"32",
+                    "height":"32"
+                }
+            },
+            "image": {{ if .Params.images }}[{{ range $i, $e := .Params.images }}{{ if $i }}, {{ end }}{{ $e | absURL }}{{ end }}]{{ else}}{{.Site.Params.logo | absURL }}{{ end }},
+            "url" : "{{ .Permalink }}",
+            "wordCount" : "{{ .WordCount }}",
+            "genre" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}],
+            "keywords" : [ {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}"{{ $tag }}" {{ end }}]
+        }
+        </script>
+        {{ end }}
+    </head>
 
-  </head>
+    {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
 
-  {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
-  <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}">
-    <header>
-        {{ $image := resources.Get "img/ConsoleLabs_logo.png" }}
-        <a href="/">
-            <img src="{{ $image.Permalink }}" alt="ConsoleLabs" height="100px" style="margin:-28px -25px;">
-        </a>
-    </header>
+    <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}">
+        <header>
+            {{ $image := resources.Get "img/ConsoleLabs_logo.png" }}
+            <a href="/">
+                <img src="{{ $image.Permalink }}" alt="ConsoleLabs" height="106px" style="margin:-28px -26px;">
+            </a>
+        </header>
 
-    <article>
-        <a href="/">{{ .Site.Title }}</a> / <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ partial "menu.html" . }}
+
+        <article>
+            <a href="/">{{ .Site.Title }}</a> / <a href="{{ .RelPermalink }}">{{ .Title }}</a>
