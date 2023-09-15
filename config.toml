@@ -1,4 +1,3 @@
-theme = 'hugo-book'
 baseURL = 'https://consolelabs.github.io/'
 languageCode = "en-us"
 relativeURLs = false
