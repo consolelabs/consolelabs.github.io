@@ -1,4 +1,5 @@
 baseURL: https://log.console.so
+languageCode: "en-us"
 title: Console Labs
 module:
   imports:
@@ -6,3 +7,13 @@ module:
     disable: true
   - path: github.com/adityatelange/hugo-PaperMod
     disable: true
+
+markup:
+  highlight:
+    style: "github"
+  frontmatter:
+    publishDate: ["publishDate", "date"]
+    authors: ["authors"]
+  goldmark:
+    renderer:
+      unsafe: true

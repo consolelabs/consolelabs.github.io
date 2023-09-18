@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Ronalds Vilcins - {{ .Site.BaseURL }}">
+    <meta name="author" content="{{ with .Site.Params.author }}{{ . }}{{ end }}" />
+    <meta name="description" content="{{if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
     {{ $favicon := resources.Get "favicon.ico" }}
     {{ $favicon16 := resources.Get "favicon-16x16.png" }}
     {{ $favicon32 := resources.Get "favicon-32x32.png" }}
