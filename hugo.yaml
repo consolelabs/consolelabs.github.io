@@ -10,7 +10,16 @@ module:
 
 markup:
   highlight:
-    style: "github"
+    anchorLineNos: false
+    codeFences: false
+    guessSyntax: false
+    hl_Lines: 1
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: false
+    noClasses: true
+    tabWidth: 1
   frontmatter:
     publishDate: ["publishDate", "date"]
     authors: ["authors"]
