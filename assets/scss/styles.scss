@@ -10,6 +10,83 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: #000;
+  line-height: 25px;
+}
+
+h1 {
+  font-size: 45px;
+  text-transform: capitalize;
+  display: none
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: capitalize
+}
+
+h3 {
+  font-size: 20px;
+  text-transform: capitalize
+}
+
+h4 {
+  font-size: 35px;
+  text-transform: capitalize
+}
+
+q {
+  font-size: 20px;
+  max-width: 500px;
+  display: block;
+  margin-left: 30px;
+}
+
+pre {
+  font-family: monospace;
+  background: white !important;
+  color: black !important;
+  padding: 15px;
+  border-radius: 2px;
+  overflow-x: auto;
+}
+
+pre > code {
+  display: block;
+  text-indent: 0;
+  white-space: inherit;
+  font-weight: normal;
+}
+
+code {
+  font-family: monospace;
+  font-size: 12px;
+  background: white;
+  color: black;
+  padding: 2px 5px;
+  white-space: pre;
+  border-radius: 2px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 16px;
+}
+
+code comment {
+  color: #777;
+}
+
+code.button {
+  background: #000;
+  color: white;
+  font-size: smaller;
+  display: inline-block;
+  padding: 0px 6px;
+  font-weight: bold;
+  border-radius: 2px;
+  line-height: 22px;
+}
+
+a[href*="#"] {
+  text-decoration: none;
 }
 
 /*
@@ -19,33 +96,42 @@ nav.menu {
   float: left;
   padding: 45px;
   max-width: 200px;
+  line-height: 22px;
+  margin-top: -2px;
 }
+
 nav .site-nav {
   margin: 20px 0 20px 0;
   display: block;
 }
+
 nav .site-nav section {
   float: left;
-  margin: 0px 10px;
   max-width: 200px;
+  margin-top: -2px;
 }
+
 nav .site-nav section h2 {
   margin: 20px 0 20px 0;
 }
+
 nav.menu details summary {
   margin-bottom: 30px;
 }
+
 @media (max-width: 1100px) {
   nav.menu {
     width: 100%;
     max-width: 100%;
   }
 }
+
 @media (max-width: 1100px) and (min-width: 651px) {
   nav .site-nav section {
     width: calc(25% - 10px);
   }
 }
+
 nav.menu ul {
   padding: 0px 10px 10px 0px;
   margin: 0px;
@@ -62,65 +148,61 @@ article {
   max-width: 700px;
   float: left;
 }
+
 header {
   padding: 45px;
   border-bottom: 1px solid #222;
 }
+
 header a img {
   filter: invert(1);
 }
+
 header h1 {
   display: inline;
 }
+
 footer {
   padding: 45px;
   clear: both;
 }
-pre, code {
-  font-size: inherit;
-  background: #333;
-}
-pre {
-  margin-bottom: 2rem;
-}
-pre code {
-  display: block;
-  border: none;
-  padding: 1em;
-  background: none;
-  overflow-x: auto;
-}
-code {
-  background: #333;
-}
+
 nav .site-nav ul li {
   list-style-type: none;
   display: flex;
   font-variant-numeric: tabular-nums;
 }
+
 li:has(input[type="checkbox"]) {
   display: block;
   list-style-type: none;
 }
+
 ul:has(li input[type="checkbox"]) {
   padding: 0px;
 }
+
 ul li a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 time {
   padding-right: 1rem
 }
+
 blockquote {
   margin: 1em 0;
   padding: 0 2em;
   border-left: 3px solid #eee;
 }
+
 img {
   max-width: 100%;
 }
-a, a:visited {
+
+a,
+a:visited {
   color: white;
 }
