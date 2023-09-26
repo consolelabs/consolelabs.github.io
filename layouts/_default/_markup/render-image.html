@@ -6,7 +6,11 @@
     {{- if strings.HasSuffix $url.Path ".md" -}}
       {{- relref .Page .Destination | safeURL -}}
     {{- else -}}
-      {{- printf "/%s%s" .Page.File.Dir .Destination | safeURL -}}
+      {{ if strings.HasPrefix .Page.File.Dir "/" }}
+        {{- printf "%s%s" .Page.File.Dir .Destination | safeURL -}}
+      {{- else -}}
+        {{- printf "/%s%s" .Page.File.Dir .Destination | safeURL -}}
+      {{- end -}}
     {{- end -}}
   {{- else -}}
     {{- .Destination | safeURL -}}
