@@ -154,7 +154,7 @@ main > ul > li > a {
   text-decoration: underline;
 }
 
-main > ul:has(li > a) {
+main > ul:has(li > a[href^="/"]) {
   columns: 2;
 }
 
