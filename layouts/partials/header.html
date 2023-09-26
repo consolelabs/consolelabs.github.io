@@ -104,4 +104,8 @@
         {{ partial "menu.html" . }}
 
         <article>
-            <a href="/">{{ .Site.Title }}</a> / <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <!-- <a href="/">{{ .Site.Title }}</a> / <a href="{{ .RelPermalink }}">{{ .Title }}</a> -->
+
+            {{ if .Params.toc -}}
+            <aside class="toc">{{ .TableOfContents }}</aside>
+            {{ end }}
