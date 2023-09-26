@@ -14,6 +14,15 @@
       </section>
 
       <section>
+        <h2>experiments</h2>
+        <ul>
+        {{ $currentPage := .Sites.First.Home }}
+        {{ range .Site.Menus.experiments }}
+        <li{{ if eq .URL $currentPage.RelPermalink }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+        </ul>
+      </section>
+      <section>
         <h2>playbook</h2>
         <ul>
         {{ $currentPage := .Sites.First.Home }}
@@ -28,16 +37,6 @@
         <ul>
         {{ $currentPage := .Sites.First.Home }}
         {{ range .Site.Menus.log }}
-        <li{{ if eq .URL $currentPage.RelPermalink }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
-        {{ end }}
-        </ul>
-      </section>
-
-      <section>
-        <h2>experiments</h2>
-        <ul>
-        {{ $currentPage := .Sites.First.Home }}
-        {{ range .Site.Menus.experiments }}
         <li{{ if eq .URL $currentPage.RelPermalink }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
         {{ end }}
         </ul>
