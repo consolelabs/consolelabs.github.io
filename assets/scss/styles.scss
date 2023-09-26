@@ -15,7 +15,7 @@ body {
 :root {
   --primary-color: #45f1a6;
   --primary-color-light: #2ea370;
-  --nav-sidebar-width: 250px
+  --nav-sidebar-width: 200px
 }
 
 h1,
@@ -117,7 +117,7 @@ nav .site-nav {
 
 nav .site-nav section {
   float: left;
-  max-width: var(--nav-sidebar-width);
+  max-width: calc(var(--nav-sidebar-width) + 50px);
   margin-top: -2px;
 }
 
