@@ -7,7 +7,16 @@ setup:
 	mkdir -p ./content
 
 build:
-	pushd vault && git pull && popd && obsidian-export ./vault ./content && hugo --minify
+	pushd vault && \
+	git pull && \
+	popd && \
+	obsidian-export ./vault ./content && \
+	hugo --minify
 
 run:
 	hugo server
+
+run-target:
+	mkdir -p vault content && \
+	rsync -avz $(path) ./vault/ && \
+	obsidian-export ./vault/ ./content/
