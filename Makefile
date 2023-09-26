@@ -18,6 +18,6 @@ run:
 
 run-target:
 	mkdir -p vault content && \
-	rsync -avz $(path) ./vault/ && \
+	rsync -avh $(path) ./vault/ --delete && \
 	obsidian-export ./vault/ ./content/ && \
 	hugo server
