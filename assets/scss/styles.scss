@@ -163,7 +163,7 @@ main > ul > li > a {
   text-decoration: underline;
 }
 
-main > ul:has(li > a[href^="/"]) {
+main > ul:has(li > a[href^="/"]:only-child) {
   columns: 2;
 }
 
