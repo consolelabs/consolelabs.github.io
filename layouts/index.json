@@ -8,7 +8,6 @@
     {
       "id": {{ sha1 .Title | jsonify }},
       "title": {{ .Title | jsonify }},
-      "authors": {{ .Params.authors | jsonify }},
       "summary": {{ .Description | jsonify }},
       "content_text": {{ .Content | plainify | jsonify }},
       "content_html": {{ .Content | jsonify }},
