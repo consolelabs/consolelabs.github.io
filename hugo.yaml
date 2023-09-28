@@ -9,7 +9,7 @@ module:
     disable: true
 
 outputs:
-  home: ["HTML", "RSS", "SearchIndex"]
+  home: ["HTML", "RSS", "JSON"]
 markup:
   highlight:
     anchorLineNos: false

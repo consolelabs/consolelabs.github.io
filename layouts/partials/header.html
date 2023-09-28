@@ -13,14 +13,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon16.Permalink }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon32.Permalink }}">
     <link rel="apple-touch-icon" href="{{ $appleTouchIcon.Permalink }}">
-    {{ with .OutputFormats.Get "rss" -}}
-        {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
-    {{ end }}
     <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <link rel="canonical" href="{{ .Permalink | absURL }}">
-    <link rel="alternate" type="application/atom+xml" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}atom.xml" />
-    <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}feed.json" />
+    <link rel="alternate" type="application/atom+xml" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}index.xml" />
+    <link rel="alternate" type="application/json" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}index.json" />
     <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
     {{ $styles := resources.Get "scss/styles.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
     <style>{{ $styles.Content | safeCSS }}</style>

@@ -4,14 +4,11 @@
   "home_page_url": "{{ .Site.BaseURL }}",
   "description": "{{ .Site.Params.description }}",
   "expired": false,
-  "items": [
-    {{ $list := (where .Site.RegularPages "Section" "writing") }}
-    {{ $len := (len $list) }}
-
-    {{ range $index, $element := $list }}
+  "items": [{{ $list := .Site.RegularPages }}{{ $len := (len $list) }}{{ range $index, $element := $list }}
     {
       "id": {{ sha1 .Title | jsonify }},
       "title": {{ .Title | jsonify }},
+      "authors": {{ .Params.authors | jsonify }},
       "summary": {{ .Description | jsonify }},
       "content_text": {{ .Content | plainify | jsonify }},
       "content_html": {{ .Content | jsonify }},
@@ -20,7 +17,6 @@
       "banner_image": "{{ .Site.BaseURL }}img/{{ .Params.photo }}",
       "date_published": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}",
       "date_modified": "{{ .Date.Format `2016-02-09T14:22:00-07:00` | safeHTML }}"
-    }{{ if ne (add $index 1) $len }},{{ end }}
-    {{ end }}
+    }{{ if ne (add $index 1) $len }},{{ end }}{{ end }}
   ]
 }
