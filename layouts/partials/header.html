@@ -101,15 +101,16 @@
             </a>
         </header>
 
-        {{ partial "menu.html" . }}
+        <div>
+            {{ partial "menu.html" . }}
 
-        <main>
-            <!-- <a href="/">{{ .Site.Title }}</a> / <a href="{{ .RelPermalink }}">{{ .Title }}</a> -->
+            <main>
+                <!-- <a href="/">{{ .Site.Title }}</a> / <a href="{{ .RelPermalink }}">{{ .Title }}</a> -->
 
-            {{ if .Params.notice -}}
-            <div class="notice">{{ .Params.notice }}</div>
-            {{ end }}
+                {{ if .Params.notice -}}
+                <div class="notice">{{ .Params.notice }}</div>
+                {{ end }}
 
-            {{ if .Params.toc -}}
-            <aside class="toc">{{ .TableOfContents }}</aside>
-            {{ end }}
+                {{ if .Params.toc -}}
+                <aside class="toc">{{ .TableOfContents }}</aside>
+                {{ end }}
