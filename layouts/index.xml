@@ -11,12 +11,12 @@
     <generator>{{ .Site.BaseURL }}</generator>
     <docs>http://cyber.harvard.edu/rss/rss.html</docs>
     <atom:link href="https://log.console.so/atom.xml" rel="self" type="application/atom+xml"/>
-    {{ range where .Site.RegularPages "Section" "writing" }}
+    {{ range .Site.RegularPages }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <description>{{ .Content | html }}</description>
-      <author>{{ .Site.Params.author }}</author>
+      <author>{{ .Site.Params.authors }}</author>
       <guid>{{ .Permalink }}</guid>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
     </item>
