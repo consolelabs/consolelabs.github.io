@@ -1,13 +1,98 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>consolelabs on Console Labs</title><link>https://log.console.so/tags/consolelabs/</link><description>Recent content in consolelabs on Console Labs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 28 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://log.console.so/tags/consolelabs/index.xml" rel="self" type="application/rss+xml"/><item><title>contributors</title><link>https://log.console.so/contributors/</link><pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/contributors/</guid><description>Here are people at Console Labs and contributors who give hands to make our experiments happened
-core neko-san: twitter, bsky hnh: github vincent: github tono: twitter contributors anna minh.cloud 0xLight owltrovert PAMsheep phucld: github trkhoi: github anhnh: github huynk: github phucnh: github Mashiro: github quang: github bien: github namnhce: github minhth: github vdhieu: github haongo138: github Pod Town DAO 𝖘𝖚𝖓 𝖋𝖎𝖗𝖊 [𝖓𝖋𝖆] digdug bimps: twitter</description></item><item><title>Shape Up</title><link>https://log.console.so/blog/shape-up/</link><pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/blog/shape-up/</guid><description>Exploring We build up knowledge through collective team learning. This page is where lab members share their explorations of the financial world.
-Every week, we host a presentation to discuss our findings. This not only aids memory recall but also fosters a lasting learning culture within the team, keeping us updated on market trends.
-We cover a range of topics, from basics like &amp;lsquo;6 jars budgeting methodology&amp;rsquo; to more current subjects like &amp;lsquo;web3 liquidity techniques&amp;rsquo;.</description></item><item><title>emoji</title><link>https://log.console.so/experiments/emoji/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/emoji/</guid><description/></item><item><title>kekk</title><link>https://log.console.so/experiments/kekk/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/kekk/</guid><description/></item><item><title>mochi</title><link>https://log.console.so/experiments/mochi/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/mochi/</guid><description/></item><item><title>neko</title><link>https://log.console.so/experiments/neko/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/neko/</guid><description/></item><item><title>pod town</title><link>https://log.console.so/experiments/pod-town/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/pod-town/</guid><description/></item><item><title>WAGMI comics</title><link>https://log.console.so/experiments/wagmi/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/wagmi/</guid><description/></item><item><title>About Us</title><link>https://log.console.so/about/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/about/</guid><description>Intro We’re Console Labs. We’re all about that finance and making things fun. We’re diving deep into tech, data, web3, blockchain, and jotting down all the cool stuff we find, hoping to whip up something rad for everyone online.
-Peep our philosophy and mission, or keep it fresh by catching our monthly updates. Oh, and btw, we’re like a sibling to Dwarves.
-Website 💻 This site is where we show our face to the world.</description></item><item><title>log</title><link>https://log.console.so/blog/log/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/blog/log/</guid><description>A list of changes and updates to our experiments.
-RSS feed, regular updates. Newsletter for frens, monthly updates. September 2023</description></item><item><title>Philosophy</title><link>https://log.console.so/philosophy/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/philosophy/</guid><description>We’re all about shaping a future where tech is chill, super fun, and all about those money vibes. Here’s the scoop on the four main vibes guiding our crew:
-Small but Sharp 🔍 We’re digging the idea of creating things that are small but ace at what they do. We aim for simplicity and effectiveness, making sure every tool we make nails its job and stands out in its own way.</description></item><item><title>Mission</title><link>https://log.console.so/mission/</link><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/mission/</guid><description>// thought about future + software + finance Believe in the future where everyone has to involve in financial activity
-// and we want to Building financial-centric software
-// Part of the Dwarves
-// build and chill Building a product team
-// the financial data layer
-Financial-centric Recognizing the inevitability of financial activities in the future, we dedicate our efforts to building software that safeguards and enriches people’s financial journeys.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>consolelabs on Console Labs</title><link>https://log.console.so/tags/consolelabs/</link><description>Recent content in consolelabs on Console Labs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 28 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://log.console.so/tags/consolelabs/index.xml" rel="self" type="application/rss+xml"/><item><title>contributors</title><link>https://log.console.so/contributors/</link><pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/contributors/</guid><description>&lt;p>Here are people at Console Labs and contributors who give hands to make our experiments happened&lt;/p>
+&lt;h3 id="core">core &lt;a href="#core">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>neko-san: &lt;a href="https://twitter.com/abaddeed">twitter&lt;/a>, &lt;a href="https://bsky.app/profile/han.bsky.social">bsky&lt;/a>&lt;/li>
+&lt;li>hnh: &lt;a href="https://github.com/huynguyenh">github&lt;/a>&lt;/li>
+&lt;li>vincent: &lt;a href="https://github.com/tuanddd">github&lt;/a>&lt;/li>
+&lt;li>tono: &lt;a href="https://twitter.com/jxt0no">twitter&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="contributors">contributors &lt;a href="#contributors">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>anna&lt;/li>
+&lt;li>minh.cloud&lt;/li>
+&lt;li>0xLight&lt;/li>
+&lt;li>owltrovert&lt;/li>
+&lt;li>PAMsheep&lt;/li>
+&lt;li>phucld: &lt;a href="https://github.com/phucledien">github&lt;/a>&lt;/li>
+&lt;li>trkhoi: &lt;a href="https://github.com/trkhoi">github&lt;/a>&lt;/li>
+&lt;li>anhnh: &lt;a href="https://github.com/anhnh12">github&lt;/a>&lt;/li>
+&lt;li>huynk: &lt;a href="https://github.com/NguyenHuy1812">github&lt;/a>&lt;/li>
+&lt;li>phucnh: &lt;a href="https://github.com/jphuc96">github&lt;/a>&lt;/li>
+&lt;li>Mashiro: &lt;a href="https://github.com/ngolapnguyen">github&lt;/a>&lt;/li>
+&lt;li>quang: &lt;a href="https://github.com/lmquang">github&lt;/a>&lt;/li>
+&lt;li>bien: &lt;a href="https://github.com/baenv">github&lt;/a>&lt;/li>
+&lt;li>namnhce: &lt;a href="https://github.com/namnhce">github&lt;/a>&lt;/li>
+&lt;li>minhth: &lt;a href="https://github.com/thminhVN">github&lt;/a>&lt;/li>
+&lt;li>vdhieu: &lt;a href="https://github.com/vdhieu">github&lt;/a>&lt;/li>
+&lt;li>haongo138: &lt;a href="https://github.com/haongo138">github&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="pod-town-dao">Pod Town DAO &lt;a href="#pod-town-dao">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>𝖘𝖚𝖓 𝖋𝖎𝖗𝖊 [𝖓𝖋𝖆]&lt;/li>
+&lt;li>digdug&lt;/li>
+&lt;li>bimps: &lt;a href="https://twitter.com/bimpmeister">twitter&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Shape Up</title><link>https://log.console.so/blog/shape-up/</link><pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/blog/shape-up/</guid><description>
+&lt;h2 id="exploring">Exploring &lt;a href="#exploring">&lt;/a>&lt;/h2>
+&lt;p>We build up knowledge through collective team learning. This page is where lab members share their explorations of the financial world.&lt;/p>
+&lt;p>Every week, we host a presentation to discuss our findings. This not only aids memory recall but also fosters a lasting learning culture within the team, keeping us updated on market trends.&lt;/p>
+&lt;p>We cover a range of topics, from basics like &amp;lsquo;6 jars budgeting methodology&amp;rsquo; to more current subjects like &amp;lsquo;web3 liquidity techniques&amp;rsquo;.&lt;/p>
+&lt;p>We’re always open to more contributors who are on the same journey, inviting them to join us in creating valuable and sharp software for everyone.&lt;/p>
+&lt;h2 id="monthly-recap">Monthly recap &lt;a href="#monthly-recap">&lt;/a>&lt;/h2>
+&lt;p>We write a monthly recap and publish them on this site, also direct to your inbox via our Substack Newsletter at &lt;a href="https://newsletter.console.so">newsletter.console.so&lt;/a>.&lt;/p>
+&lt;p>The newsletter will include only the summary of changes, updates on new findings, projects and what we have been up to, casually drafted by me and other members.&lt;/p></description></item><item><title>emoji</title><link>https://log.console.so/experiments/emoji/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/emoji/</guid><description/></item><item><title>kekk</title><link>https://log.console.so/experiments/kekk/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/kekk/</guid><description/></item><item><title>mochi</title><link>https://log.console.so/experiments/mochi/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/mochi/</guid><description/></item><item><title>neko</title><link>https://log.console.so/experiments/neko/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/neko/</guid><description/></item><item><title>pod town</title><link>https://log.console.so/experiments/pod-town/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/pod-town/</guid><description/></item><item><title>WAGMI comics</title><link>https://log.console.so/experiments/wagmi/</link><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/experiments/wagmi/</guid><description/></item><item><title>About Us</title><link>https://log.console.so/about/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/about/</guid><description>
+&lt;h2 id="intro">Intro &lt;a href="#intro">&lt;/a>&lt;/h2>
+&lt;p>We’re Console Labs. We’re all about that finance and making things fun. We’re diving deep into tech, data, web3, blockchain, and jotting down all the cool stuff we find, hoping to whip up something rad for everyone online.&lt;/p>
+&lt;p>Peep our &lt;a href="https://log.console.so/philosophy/">philosophy&lt;/a> and &lt;a href="https://log.console.so/mission/">mission&lt;/a>, or keep it fresh by catching our monthly updates.
+Oh, and btw, we’re like a sibling to &lt;a href="https://d.foundation">Dwarves&lt;/a>.&lt;/p>
+&lt;h2 id="website-">Website 💻 &lt;a href="#website-">&lt;/a>&lt;/h2>
+&lt;p>This site is where we show our face to the world. It’s all glammed up using &lt;a href="https://github.com/gohugoio/hugo">Hugo&lt;/a> with some custom magic by @monotykamary and @vincent.
+Scope out the repo &lt;a href="https://github.com/consolelabs/log.console.so">right here&lt;/a>.&lt;/p>
+&lt;h2 id="stay-connected">Stay Connected &lt;a href="#stay-connected">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Twitter: Hit us up &lt;a href="https://twitter.com/console_labs">@console_labs&lt;/a>&lt;/li>
+&lt;li>Email: Say hey &lt;a href="mailto:gm@console.so">gm@console.so&lt;/a>&lt;/li>
+&lt;li>Github: Check us out &lt;a href="https://github.com/consolelabs">github.com/consolelabs&lt;/a>&lt;/li>
+&lt;li>Also, catch us on Warpcast&lt;/li>
+&lt;/ul>
+&lt;h2 id="spilling-the-tea-">Spilling the Tea 🍵 &lt;a href="#spilling-the-tea-">&lt;/a>&lt;/h2>
+&lt;p>We kicked off Console Labs during the whole pandemic chaos in 2020. Since then, it’s been non-stop experimenting. Some stuff totally rocked, some didn’t, but all the stories are right here.&lt;/p>
+&lt;p>After each vibe check, we jot down the deets, thoughts, and what we learned. Han, tono, hnh, and vincent are keeping this site alive, with a little backup from the crew including anna, minh_cloud, and 0xLight.&lt;/p>
+&lt;p>We’re all out here with our own thoughts and vibes. It’s totally cool for us to get it wrong and flip our views. Always learning and getting deeper into all the things. 🧠&lt;/p>
+&lt;h2 id="roadmap">Roadmap &lt;a href="#roadmap">&lt;/a>&lt;/h2>
+&lt;p>We drew up our plans on a canvas, and every time something pops off, the canvas gets bigger. Wanna see what’s up? Check it: &lt;a href="https://roadmap.console.so">roadmap.console.so&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://log.console.so/images/roadmap.jpg"/>&lt;/p>
+&lt;h2 id="contribute">Contribute &lt;a href="#contribute">&lt;/a>&lt;/h2>
+&lt;p>If you love what we&amp;rsquo;re doing, feel free to open PRs or check out our backlog. Let’s make cool stuff together.&lt;/p></description></item><item><title>log</title><link>https://log.console.so/blog/log/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/blog/log/</guid><description>&lt;p>A list of changes and updates to our experiments.&lt;/p>
+&lt;ul>
+&lt;li>RSS feed, regular updates.&lt;/li>
+&lt;li>&lt;a href="https://newsletter.console.so">Newsletter&lt;/a> for frens, monthly updates.&lt;/li>
+&lt;/ul>
+&lt;h2 id="september-2023">September 2023 &lt;a href="#september-2023">&lt;/a>&lt;/h2></description></item><item><title>Philosophy</title><link>https://log.console.so/philosophy/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/philosophy/</guid><description>&lt;p>We’re all about shaping a future where tech is chill, super fun, and all about those money vibes. Here’s the scoop on the four main vibes guiding our crew:&lt;/p>
+&lt;h2 id="small-but-sharp-">Small but Sharp 🔍 &lt;a href="#small-but-sharp-">&lt;/a>&lt;/h2>
+&lt;p>We’re digging the idea of creating things that are small but ace at what they do. We aim for simplicity and effectiveness, making sure every tool we make nails its job and stands out in its own way. In a world that can be too much, we keep it simple and focused.&lt;/p>
+&lt;h2 id="financial-centric-">Financial-Centric 💰 &lt;a href="#financial-centric-">&lt;/a>&lt;/h2>
+&lt;p>We know that managing money is gonna be a big deal in the future, so we’re focused on making apps and tools that help people do it safely. We want to give everyone easy and safe access to handle their money and learn more about it. Our goal? A future where everyone gets their finances.&lt;/p>
+&lt;h2 id="accessible-">Accessible 🌐 &lt;a href="#accessible-">&lt;/a>&lt;/h2>
+&lt;p>We stand for a digital world that’s open to all, removing barriers and starting new conversations and collaborations. Making things accessible to everyone, everywhere is what we’re all about. We want everyone, no matter where they are, to use our tools and feel included.&lt;/p>
+&lt;h2 id="gamified-">Gamified 🎮 &lt;a href="#gamified-">&lt;/a>&lt;/h2>
+&lt;p>We&amp;rsquo;re gamers at heart, and that passion is in everything we make. We know people love fun – it’s irresistible but can be hard to make. So, we’re turning every interaction into a cool adventure, where every challenge is an opportunity to level up.&lt;/p>
+&lt;p>That’s us – making sharp tools, being open to all, having fun, and keeping an eye on the financial future. These four vibes are what Console Labs is all about. They guide our way and help us build and explore.&lt;/p></description></item><item><title>Mission</title><link>https://log.console.so/mission/</link><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/mission/</guid><description>&lt;p>// thought about future + software + finance
+Believe in the future where everyone has to involve in financial activity&lt;/p>
+&lt;p>// and we want to
+Building financial-centric software&lt;/p>
+&lt;p>//
+Part of the Dwarves&lt;/p>
+&lt;p>// build and chill
+Building a product team&lt;/p>
+&lt;p>// the financial data layer&lt;/p>
+&lt;h2 id="financial-centric">Financial-centric &lt;a href="#financial-centric">&lt;/a>&lt;/h2>
+&lt;p>Recognizing the inevitability of financial activities in the future, we dedicate our efforts to building software that safeguards and enriches people’s financial journeys.&lt;/p>
+&lt;p>We know dealing with money is going to be a big part of the future, so we’re dedicated to making software that helps peeps do it safely and navigate through the finance world.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Secure the Bag&lt;/strong>: Every creation of ours is your key to handling moolah safely and getting those financial gains.&lt;/li>
+&lt;li>&lt;strong>Safe and Sound&lt;/strong>: Everything we make aims to give people safe and easy access to handle their money and learn more about it.
+Crafting software that helps peeps navigate the finance world safely is our jam!&lt;/li>
+&lt;/ul>
+&lt;p>Every solution we develop is centered around providing safe, secure, and empowering access to financial resources and knowledge, preparing individuals for a flourishing financial future.
+We’re looking at a future where everyone’s got their money game on point. We’re here to build the tech that makes finance a breeze, so everyone can make those smart moves and get that bread.&lt;/p>
+&lt;p>We see a future where everyone’s in tune with their finances. That’s why we’re here, building the cool tech that makes understanding and accessing finance a breeze, helping everyone make those smart, secure money moves!&lt;/p></description></item></channel></rss>

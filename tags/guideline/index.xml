@@ -1,7 +1,170 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>guideline on Console Labs</title><link>https://log.console.so/tags/guideline/</link><description>Recent content in guideline on Console Labs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 15 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://log.console.so/tags/guideline/index.xml" rel="self" type="application/rss+xml"/><item><title>API-first development</title><link>https://log.console.so/playbook/api-first/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/playbook/api-first/</guid><description>by hnh
-Background @Console Labs, our primary goal is to rapidly introduce new features and gather user feedback as quickly as possible. We understand that this approach isn&amp;rsquo;t flawless and can lead to regression bugs. However, at this stage of our product development, we are content with this strategy.
-The challenge arises when we aim to develop something new within a short timeframe, typically one week or even just two days.</description></item><item><title>Data layer</title><link>https://log.console.so/playbook/data-layer/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/playbook/data-layer/</guid><description>by hnh
-This data layer serves as the central source of information for various features such as tickers, price alerts, and token details. These features rely on the data within this layer to provide accurate and up-to-date information to users. In essence, it&amp;rsquo;s like the beating heart of the mochi ecosystem, ensuring that all the essential data is readily available for users to access and use.
-Raw Data The raw data that powers our system originates from blockchain transaction data, which we can retrieve from various RPC sources.</description></item><item><title>Leverage Mochi balances</title><link>https://log.console.so/playbook/integrate-mochi-balances/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/playbook/integrate-mochi-balances/</guid><description>by hnh, minh_cloud</description></item><item><title>Integrate new chain</title><link>https://log.console.so/playbook/add-new-chains/</link><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/playbook/add-new-chains/</guid><description>by hnh, vhbien
-In the rapidly evolving blockchain industry, it&amp;rsquo;s crucial to keep up with the pace of change. Here&amp;rsquo;s a quick overview of how we seamlessly integrate new chains into the Mochi system, with the caveat that this method is specific to EVM-based blockchains:
-Product Preparation Pull raw data into clickhouse Ticker, Watchlist Token Info Wallet tracking on this new chain Show assets in profile Transfer / Tip / Airdrop / Payme / Paylink Withdraw Deposit [0] Product Preparation In this section, most of the tasks require manual handling.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>guideline on Console Labs</title><link>https://log.console.so/tags/guideline/</link><description>Recent content in guideline on Console Labs</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 15 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://log.console.so/tags/guideline/index.xml" rel="self" type="application/rss+xml"/><item><title>API-first development</title><link>https://log.console.so/playbook/api-first/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/playbook/api-first/</guid><description>&lt;p>by hnh&lt;/p>
+&lt;h2 id="background">Background &lt;a href="#background">&lt;/a>&lt;/h2>
+&lt;p>@Console Labs, our primary goal is to rapidly introduce new features and gather user feedback as quickly as possible. We understand that this approach isn&amp;rsquo;t flawless and can lead to regression bugs. However, at this stage of our product development, we are content with this strategy.&lt;/p>
+&lt;p>The challenge arises when we aim to develop something new within a short timeframe, typically one week or even just two days. This typically involves creating a small set of new features, starting from gathering requirements, designing the features, and then implementing them on both the backend and frontend.&lt;/p>
+&lt;p>We want to emphasize our focus on &amp;ldquo;both backend and frontend development&amp;rdquo; because this aspect is within our control as an engineering team. In a typical workflow, individuals often start with backend tasks such as designing the database and setting up APIs before moving on to implementation. However, we are exploring a different approach. We aim to build an API or establish a fixed data structure that allows the frontend team to work independently on their user interfaces. This way, we can streamline development and potentially reduce development time while maintaining control over our engineering processes.&lt;/p>
+&lt;h2 id="how">How &lt;a href="#how">&lt;/a>&lt;/h2>
+&lt;ol start="0">
+&lt;li>PO works on their requirement&lt;/li>
+&lt;li>Meeting: User story clarification/refinement discussion&lt;/li>
+&lt;li>Backend: provide a fixed JSON schema for the Frontend to work on&lt;/li>
+&lt;li>Frontend: Using mock json host on &lt;a href="https://github.com/consolelabs/mock-data">this repo&lt;/a> to work on your UI
+Backend: Work to implementation at the same time&lt;/li>
+&lt;li>Switch to API-call when api ready&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://log.console.so/playbook/../images/playbook/api-first.png"/>&lt;/p></description></item><item><title>Data layer</title><link>https://log.console.so/playbook/data-layer/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/playbook/data-layer/</guid><description>&lt;p>by hnh&lt;/p>
+&lt;p>&lt;img src="https://log.console.so/playbook/../images/playbook/data-flow.png"/>&lt;/p>
+&lt;p>This data layer serves as the central source of information for various features such as tickers, price alerts, and token details. These features rely on the data within this layer to provide accurate and up-to-date information to users. In essence, it&amp;rsquo;s like the beating heart of the mochi ecosystem, ensuring that all the essential data is readily available for users to access and use.&lt;/p>
+&lt;h2 id="raw-data">Raw Data &lt;a href="#raw-data">&lt;/a>&lt;/h2>
+&lt;p>The raw data that powers our system originates from blockchain transaction data, which we can retrieve from various RPC sources. However, maintaining a stable and consistent RPC connection has proven to be challenging in our past experiences. To address this issue, we&amp;rsquo;ve adopted a different approach. We pull all the raw data into our Clickhouse database, where we store it for a period of 30 days before it&amp;rsquo;s automatically deleted.&lt;/p>
+&lt;p>This raw data plays a crucial role in providing transaction notifications to our users. Any transaction originating from wallets that we track is processed by our system. If a tracked wallet engages in a transaction, our system ensures that users are promptly notified about it. This process allows us to deliver real-time transaction updates and information to our users reliably.&lt;/p>
+&lt;h2 id="token-data">Token data &lt;a href="#token-data">&lt;/a>&lt;/h2>
+&lt;p>Token data encompasses several important aspects:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Token Info: This component provides project metadata, including details such as the project&amp;rsquo;s Twitter account, website, and a concise project description. We retrieve this information from sources like Etherscan or CoinGecko.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Price Info: Calculating price information ourselves can be redundant and resource-intensive. Instead, we rely on established sources like CoinGecko, which offers a stable API with reasonable costs. This allows us to provide accurate and up-to-date price data to our users without reinventing the wheel.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Dex Data: Dex data represents the most comprehensive information about each token. It includes details about which decentralized exchanges (dex) currently list the token and provides data such as the number of token holders or trading volume for each day. Rather than calculating this information in-house, we source it from multiple data sources and store it in our data layer. This approach ensures that our users have access to comprehensive dex-related data for each token without the need for extensive calculations on our part.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="gotchas">Gotchas &lt;a href="#gotchas">&lt;/a>&lt;/h2>
+&lt;h3 id="query-speed">Query speed &lt;a href="#query-speed">&lt;/a>&lt;/h3>
+&lt;p>When it comes to building online services, speed is a top priority. As our data layer continues to grow, we&amp;rsquo;ve implemented several optimization strategies to ensure efficient and fast data retrieval:&lt;/p>
+&lt;p>Caching Frequently Accessed Data: To address the need for frequently queried data like token prices and metadata (such as emoji associated with tokens), we employ short-lived Redis caching. This allows us to store this data temporarily in a highly responsive cache, reducing the need to query the upstream services or databases repeatedly for the same information. Caching helps deliver swift responses to user requests.
+Read Replicas and Data Partitioning: For data that cannot be cached due to its infrequent use or size, we&amp;rsquo;ve taken a two-pronged approach. First, we&amp;rsquo;ve created read replicas within our PostgreSQL layer. These replicas serve as copies of our main database, dedicated to handling read requests. This not only spreads the load but also improves query response times.
+Additionally, we&amp;rsquo;ve optimized data storage and retrieval by partitioning our most frequently accessed tables. Partitioning involves breaking these tables into smaller, more manageable parts based on certain criteria (e.g., time, category, or other relevant factors). This partitioning strategy significantly enhances query performance, as it reduces the amount of data that needs to be scanned or processed during each query. This combination of read replicas and data partitioning ensures that we can maintain high-speed access to our data even as our data layer continues to expand.&lt;/p>
+&lt;h3 id="data-realtime-ness">Data Realtime-ness &lt;a href="#data-realtime-ness">&lt;/a>&lt;/h3>
+&lt;p>Ensuring real-time data accuracy for crucial information like token prices is essential to avoid missing any market movements. However, for certain types of data like total assets and token info, real-time updates can be delayed without significantly impacting user experience. Here&amp;rsquo;s how we manage this balance:&lt;/p>
+&lt;p>Real-time Data for Price Updates: For data that requires real-time accuracy, such as token prices, we prioritize instant updates. This ensures that our users receive the most up-to-date information, especially those who rely on timely market data. Real-time data is essential to provide users with the information they need to make informed decisions in the fast-paced world of cryptocurrencies.&lt;/p>
+&lt;p>Delayed Data for Less Critical Information: To reduce stress on our system and enhance the overall user experience, we introduce a slight delay in updating less critical information, such as total assets and token details. This delay allows us to optimize data processing and avoid overwhelming our resources. From the perspective of most users, this data still appears to be served instantly, ensuring a seamless experience.&lt;/p>
+&lt;p>Prioritizing Real-time Data for Top Users: Recognizing the importance of real-time data for our top users, we&amp;rsquo;ve implemented a ranking system. The most active users or those with specific access privileges can enjoy the benefit of receiving data in real-time with minimal delay. This approach ensures that our highest-priority users have access to the most critical data without compromise.&lt;/p>
+&lt;p>Background Jobs for Data Handling: To manage these data updates efficiently, we handle most data processing as background jobs. This allows us to update and synchronize information without disrupting the user interface or slowing down the system&amp;rsquo;s responsiveness. By running these tasks in the background, we maintain a balance between real-time data needs and system stability.&lt;/p>
+&lt;p>In summary, our approach involves a careful balance between real-time data for critical information and slightly delayed updates for less critical data. This strategy, combined with a ranking system and background job processing, allows us to provide both real-time accuracy and a smooth user experience while managing system resources effectively.&lt;/p>
+&lt;h3 id="maintain-an-affordable-sassinfras-price">Maintain an affordable SaSS/infras price &lt;a href="#maintain-an-affordable-sassinfras-price">&lt;/a>&lt;/h3>
+&lt;p>Maintaining a reasonable cost for the data layer is crucial for the sustainability of your online service. Here&amp;rsquo;s how you approach cost management:&lt;/p>
+&lt;ol>
+&lt;li>Start with Third-Party Services: When in doubt, opting for third-party services is often the most cost-effective and efficient choice. These services are specialized and can save you time and resources in the short term. Even if they come with a monthly cost, as you mentioned, they often offer a great value proposition by allowing you to focus on other aspects of your platform.&lt;/li>
+&lt;li>Continuous Evaluation: Periodically assess the cost-effectiveness of the third-party services you use. Determine if the expense is justified by the benefits they provide. If a service becomes too costly or if you outgrow it, consider alternatives or building an in-house solution.&lt;/li>
+&lt;li>Building In-House Solutions: As your platform matures and your needs become more complex, it may become financially prudent to build certain services in-house. By doing so, you have more control over costs, scalability, and customization. However, this should be a well-considered decision, as it often involves higher initial investments in development and ongoing maintenance.&lt;/li>
+&lt;li>Cost Monitoring and Optimization: Implement robust cost monitoring and optimization practices. Keep an eye on data usage, query efficiency, and infrastructure costs. Use cloud provider tools to track spending and optimize resources accordingly. Often, small adjustments can lead to significant cost savings.&lt;/li>
+&lt;/ol></description></item><item><title>Leverage Mochi balances</title><link>https://log.console.so/playbook/integrate-mochi-balances/</link><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/playbook/integrate-mochi-balances/</guid><description>&lt;p>by hnh, minh_cloud&lt;/p></description></item><item><title>Integrate new chain</title><link>https://log.console.so/playbook/add-new-chains/</link><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate><guid>https://log.console.so/playbook/add-new-chains/</guid><description>&lt;p>by hnh, vhbien&lt;/p>
+&lt;p>In the rapidly evolving blockchain industry, it&amp;rsquo;s crucial to keep up with the pace of change. Here&amp;rsquo;s a quick overview of how we seamlessly integrate new chains into the Mochi system, with the caveat that this method is specific to EVM-based blockchains:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Product Preparation&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Pull raw data into clickhouse&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Ticker, Watchlist Token Info&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Wallet tracking on this new chain&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Show assets in profile&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Transfer / Tip / Airdrop / Payme / Paylink&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Withdraw&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Deposit&lt;/li>
+&lt;/ul>
+&lt;h3 id="0-product-preparation">[0] Product Preparation &lt;a href="#0-product-preparation">&lt;/a>&lt;/h3>
+&lt;p>In this section, most of the tasks require manual handling.&lt;/p>
+&lt;p>&lt;strong>Add new chain to supported chain list&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Go to &lt;a href="https://github.com/consolelabs/mochi-pay-api">Mochi Pay&lt;/a> repository.&lt;/li>
+&lt;li>Create a migration file as show below.&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-sql">INSERT INTO &amp;quot;public&amp;quot;.&amp;quot;product_supported_chains&amp;quot; (&amp;quot;chain_id&amp;quot;, &amp;quot;name&amp;quot;, &amp;quot;symbol&amp;quot;, &amp;quot;rpc&amp;quot;, &amp;quot;explorer&amp;quot;, &amp;quot;icon&amp;quot;, &amp;quot;is_evm&amp;quot;,) VALUES
+('1', 'Ethereum Mainnet', 'ETH', 'https://eth.llamarpc.com', 'https://etherscan.io', 'https://cdn.discordapp.com/emojis/928216430451761172.png?size=240&amp;amp;quality=lossless', 't'),
+&lt;/code>&lt;/pre>
+&lt;ol start="3">
+&lt;li>use the &lt;code>/chains&lt;/code> command to see the new changes.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Add token emojis&lt;/strong>
+To enhance the aesthetics of Mochi, we aim to display token emojis whenever possible. Currently, please reach out to &lt;code>@minh_cloud&lt;/code> for assistance with this task.&lt;/p>
+&lt;h3 id="1-pull-raw-data-into-clickhouse">[1] Pull raw data into clickhouse &lt;a href="#1-pull-raw-data-into-clickhouse">&lt;/a>&lt;/h3>
+&lt;p>To store blockchain raw events data in ClickHouse, follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Go to &lt;a href="https://github.com/consolelabs/infrastructure">Infras&lt;/a> repository&lt;/li>
+&lt;li>Create a service with the following configuration, similar to the &lt;a href="https://github.com/consolelabs/infrastructure/tree/main/data-warehouse">example&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-yaml">evm:
+chainName: base
+chainId: 8453
+rpcServers:
+- https://1rpc.io/base
+- https://base.meowrpc.com
+- https://mainnet.base.org
+- https://base.blockpi.network/v1/rpc/public
+syncFromBlockNumber: 2769582
+&lt;/code>&lt;/pre>
+&lt;h3 id="2-ticker-watchlist-and-token-info">[2] Ticker, watchlist and Token info &lt;a href="#2-ticker-watchlist-and-token-info">&lt;/a>&lt;/h3>
+&lt;p>This step should work automatically. Simply go to Mochi Clients and test out some well-known tokens to ensure that everything is functioning as expected.&lt;/p>
+&lt;p>&lt;img src="https://log.console.so/playbook/../images/playbook/ticker.png"/>&lt;/p>
+&lt;h3 id="3-wallet-tracking">[3] Wallet tracking &lt;a href="#3-wallet-tracking">&lt;/a>&lt;/h3>
+&lt;p>Wallet tracking is managed within the &lt;a href="https://github.com/consolelabs/account-telemetry">account-telemetry&lt;/a> repository, follow these tasks:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Verify Clickhouse Database Data&lt;/strong>:
+&lt;ul>
+&lt;li>Check the Clickhouse database to ensure it contains data for the new chains. Specifically, verify the &lt;code>latest_block_timestamp&lt;/code> table to confirm that it has the necessary records for the new chain.&lt;/li>
+&lt;li>Ensure that the &lt;code>latest_block_timestamp&lt;/code> column is up to date and reflects the latest block timestamp for the new chain.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Update &lt;code>utils&lt;/code> package&lt;/strong>:
+&lt;ul>
+&lt;li>Update the &lt;code>chain.go&lt;/code> file to add support for the new chain. This involves adding the necessary configurations and logic to handle the data retrieval and notification process for the new chain.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>By completing these tasks, you&amp;rsquo;ll ensure that wallet tracking in the account-telemetry repository works seamlessly with the new chains, allowing for accurate notifications to users when their tracked accounts receive new transactions.&lt;/p>
+&lt;h3 id="4-show-assets-in-profile">[4] Show assets in Profile &lt;a href="#4-show-assets-in-profile">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>NOTE: This is the primary step before doing any other below steps&lt;/strong>
+In this part, it is essential to ensure that all widely-recognized tokens from the new chains are added to our database whitelist. To fulfill this requirement, we can follow these steps.&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>mochi-pay-api&lt;/code>
+&lt;ul>
+&lt;li>Seed new chain&amp;rsquo;s info to the table &lt;code>chains&lt;/code>&lt;/li>
+&lt;li>Seed tokens of new chain&amp;rsquo;s to the table &lt;code>tokens&lt;/code>
+&lt;ul>
+&lt;li>Find list listed tokens in the coingeko via this page &lt;a href="https://www.coingecko.com/en/all-cryptocurrencies">https://www.coingecko.com/en/all-cryptocurrencies&lt;/a> with proper filter.&lt;/li>
+&lt;li>Copy content of search result and ask ChatGPT help to extract list of token symbols.&lt;/li>
+&lt;li>Using result of above script as list input tokens to generate file migration, check &lt;code>mochi-pay-api/script&lt;/code> for further information.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>mochi-api&lt;/code>
+&lt;ul>
+&lt;li>Update all utils at &lt;code>utils&lt;/code> folder to support the new chains. Such as: &lt;code>ConvertInputToChainId&lt;/code>, &lt;code>ConvertChainToChainId&lt;/code> …&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="5-transfer--tip--airdrop--payme--paylink">[5] Transfer / Tip / Airdrop / Payme / Paylink &lt;a href="#5-transfer--tip--airdrop--payme--paylink">&lt;/a>&lt;/h3>
+&lt;p>Everything must be done at &lt;strong>[4]&lt;/strong>, except also need to update list chainIds in the function &lt;code>ListOrCreate&lt;/code> of repository mochi-pay-api to support creating new inapp wallet that is used for transfer/deposit/withdraw in the Mochi.&lt;/p>
+&lt;h3 id="6-withdraw">[6] Withdraw &lt;a href="#6-withdraw">&lt;/a>&lt;/h3>
+&lt;p>This is actually done at &lt;strong>[4]&lt;/strong> and &lt;strong>[5]&lt;/strong>. A token can be withdrawn when it is whitelist in the DB.&lt;/p>
+&lt;h3 id="7-deposit">[7] Deposit &lt;a href="#7-deposit">&lt;/a>&lt;/h3>
+&lt;p>To enable support for deposits on a new chain, follow these essential steps:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Compile and Deploy Deposit Contract&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Compile the deposit contract using the contract available in the consolelabs/contract-tip-bot repository.&lt;/li>
+&lt;li>Deploy the compiled deposit contract to the new chain. Ensure that the deployment is successful and that the contract is functioning as expected.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Change Ownership to Centralized Wallet Address&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Change the ownership of the deployed deposit contract to a centralized wallet address.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Seed Deposit Contract Information&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Update the &lt;code>mochi_pay_api&lt;/code> by adding information about the newly deployed deposit contract to the &lt;code>deposit_contracts&lt;/code> table. This includes details such as the contract address and other relevant information.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Test Deposits&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Perform testing to ensure that deposits work smoothly on the new chain. Test depositing a few tokens to verify that the deposit functionality is working as intended.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description></item></channel></rss>
