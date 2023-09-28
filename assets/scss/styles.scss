@@ -145,7 +145,6 @@ nav.menu ul {
   margin: 0px;
   list-style-type: none;
   line-height: 22px;
-  text-transform: capitalize;
 }
 
 /* Header, main and footer */
@@ -235,7 +234,7 @@ ul:has(li input[type="checkbox"]) {
 ul li a {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: clip;
+  text-overflow: ellipsis;
   width: calc(var(--nav-sidebar-width) + var(--nav-sidebar-offset));
   background-color: white;
 }
@@ -327,7 +326,7 @@ a:visited {
   ul li a {
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis;
     width: calc(var(--nav-sidebar-width) + var(--nav-sidebar-offset));
     background-color: black;
   }
