@@ -23,6 +23,15 @@
         </ul>
       </section>
       <section>
+        <h2>blog</h2>
+        <ul>
+        {{ $currentPage := .Sites.First.Home }}
+        {{ range .Site.Menus.blog }}
+        <li{{ if eq .URL $currentPage.RelPermalink }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+        </ul>
+      </section>
+      <section>
         <h2>playbook</h2>
         <ul>
         {{ $currentPage := .Sites.First.Home }}
@@ -32,15 +41,6 @@
         </ul>
       </section>
 
-      <section>
-        <h2>log</h2>
-        <ul>
-        {{ $currentPage := .Sites.First.Home }}
-        {{ range .Site.Menus.log }}
-        <li{{ if eq .URL $currentPage.RelPermalink }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Name }}</a></li>
-        {{ end }}
-        </ul>
-      </section>
     </section>
   </details>
 </nav>
