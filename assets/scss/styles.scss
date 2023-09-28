@@ -2,6 +2,7 @@
   --primary-color: #45f1a6;
   --primary-color-light: #2ea370;
   --nav-sidebar-width: 200px;
+  --nav-sidebar-offset: 40px;
 }
 
 /* Main */
@@ -235,7 +236,7 @@ ul li a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
-  width: calc(var(--nav-sidebar-width) + 40px);
+  width: calc(var(--nav-sidebar-width) + var(--nav-sidebar-offset));
   background-color: white;
 }
 
@@ -327,7 +328,7 @@ a:visited {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: clip;
-    width: calc(var(--nav-sidebar-width) + 25px);
+    width: calc(var(--nav-sidebar-width) + var(--nav-sidebar-offset));
     background-color: black;
   }
 }
