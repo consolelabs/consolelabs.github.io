@@ -1,4 +1,4 @@
-baseURL: https://log.console.so
+baseURL: https://log.console.so/
 languageCode: "en-us"
 title: Console Labs
 module:
@@ -9,9 +9,7 @@ module:
     disable: true
 
 outputs:
-  home:
-    - "HTML"
-    - "RSS"
+  home: ["HTML", "RSS", "SearchIndex"]
 markup:
   highlight:
     anchorLineNos: false
