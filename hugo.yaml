@@ -8,6 +8,10 @@ module:
   - path: github.com/adityatelange/hugo-PaperMod
     disable: true
 
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
 markup:
   highlight:
     anchorLineNos: false

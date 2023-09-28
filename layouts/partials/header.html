@@ -13,6 +13,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon16.Permalink }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon32.Permalink }}">
     <link rel="apple-touch-icon" href="{{ $appleTouchIcon.Permalink }}">
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+    {{ end }}
     <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if ne .Description "" }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <link rel="canonical" href="{{ .Permalink | absURL }}">
