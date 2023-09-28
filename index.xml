@@ -1,1 +1,388 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Console Labs</title><description/><link>https://log.console.so/</link><language>en</language><copyright>Copyright 28289, Han Ngo</copyright><lastBuildDate>Thu, 28 Sep 2023 00:00:00 +0000</lastBuildDate><generator>https://log.console.so/</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://log.console.so/atom.xml" rel="self" type="application/atom+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Console Labs</title><description/><link>https://log.console.so/</link><language>en</language><copyright>Copyright 28289, Han Ngo</copyright><lastBuildDate>Thu, 28 Sep 2023 00:00:00 +0000</lastBuildDate><generator>https://log.console.so/</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="https://log.console.so/atom.xml" rel="self" type="application/atom+xml"/><item><title>contributors</title><link>https://log.console.so/contributors/</link><description>&lt;p>Here are people at Console Labs and contributors who give hands to make our experiments happened&lt;/p>
+&lt;h3 id="core">core &lt;a href="#core">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>neko-san: &lt;a href="https://twitter.com/abaddeed">twitter&lt;/a>, &lt;a href="https://bsky.app/profile/han.bsky.social">bsky&lt;/a>&lt;/li>
+&lt;li>hnh: &lt;a href="https://github.com/huynguyenh">github&lt;/a>&lt;/li>
+&lt;li>vincent: &lt;a href="https://github.com/tuanddd">github&lt;/a>&lt;/li>
+&lt;li>tono: &lt;a href="https://twitter.com/jxt0no">twitter&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="contributors">contributors &lt;a href="#contributors">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>anna&lt;/li>
+&lt;li>minh.cloud&lt;/li>
+&lt;li>0xLight&lt;/li>
+&lt;li>owltrovert&lt;/li>
+&lt;li>PAMsheep&lt;/li>
+&lt;li>phucld: &lt;a href="https://github.com/phucledien">github&lt;/a>&lt;/li>
+&lt;li>trkhoi: &lt;a href="https://github.com/trkhoi">github&lt;/a>&lt;/li>
+&lt;li>anhnh: &lt;a href="https://github.com/anhnh12">github&lt;/a>&lt;/li>
+&lt;li>huynk: &lt;a href="https://github.com/NguyenHuy1812">github&lt;/a>&lt;/li>
+&lt;li>phucnh: &lt;a href="https://github.com/jphuc96">github&lt;/a>&lt;/li>
+&lt;li>Mashiro: &lt;a href="https://github.com/ngolapnguyen">github&lt;/a>&lt;/li>
+&lt;li>quang: &lt;a href="https://github.com/lmquang">github&lt;/a>&lt;/li>
+&lt;li>bien: &lt;a href="https://github.com/baenv">github&lt;/a>&lt;/li>
+&lt;li>namnhce: &lt;a href="https://github.com/namnhce">github&lt;/a>&lt;/li>
+&lt;li>minhth: &lt;a href="https://github.com/thminhVN">github&lt;/a>&lt;/li>
+&lt;li>vdhieu: &lt;a href="https://github.com/vdhieu">github&lt;/a>&lt;/li>
+&lt;li>haongo138: &lt;a href="https://github.com/haongo138">github&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="pod-town-dao">Pod Town DAO &lt;a href="#pod-town-dao">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>𝖘𝖚𝖓 𝖋𝖎𝖗𝖊 [𝖓𝖋𝖆]&lt;/li>
+&lt;li>digdug&lt;/li>
+&lt;li>bimps: &lt;a href="https://twitter.com/bimpmeister">twitter&lt;/a>&lt;/li>
+&lt;/ul></description><author/><guid>https://log.console.so/contributors/</guid><pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate></item><item><title>Shape Up</title><link>https://log.console.so/blog/shape-up/</link><description>
+&lt;h2 id="exploring">Exploring &lt;a href="#exploring">&lt;/a>&lt;/h2>
+&lt;p>We build up knowledge through collective team learning. This page is where lab members share their explorations of the financial world.&lt;/p>
+&lt;p>Every week, we host a presentation to discuss our findings. This not only aids memory recall but also fosters a lasting learning culture within the team, keeping us updated on market trends.&lt;/p>
+&lt;p>We cover a range of topics, from basics like &amp;lsquo;6 jars budgeting methodology&amp;rsquo; to more current subjects like &amp;lsquo;web3 liquidity techniques&amp;rsquo;.&lt;/p>
+&lt;p>We’re always open to more contributors who are on the same journey, inviting them to join us in creating valuable and sharp software for everyone.&lt;/p>
+&lt;h2 id="monthly-recap">Monthly recap &lt;a href="#monthly-recap">&lt;/a>&lt;/h2>
+&lt;p>We write a monthly recap and publish them on this site, also direct to your inbox via our Substack Newsletter at &lt;a href="https://newsletter.console.so">newsletter.console.so&lt;/a>.&lt;/p>
+&lt;p>The newsletter will include only the summary of changes, updates on new findings, projects and what we have been up to, casually drafted by me and other members.&lt;/p></description><author/><guid>https://log.console.so/blog/shape-up/</guid><pubDate>Thu, 28 Sep 2023 00:00:00 +0000</pubDate></item><item><title>emoji</title><link>https://log.console.so/experiments/emoji/</link><description/><author/><guid>https://log.console.so/experiments/emoji/</guid><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate></item><item><title>kekk</title><link>https://log.console.so/experiments/kekk/</link><description/><author/><guid>https://log.console.so/experiments/kekk/</guid><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate></item><item><title>mochi</title><link>https://log.console.so/experiments/mochi/</link><description/><author/><guid>https://log.console.so/experiments/mochi/</guid><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate></item><item><title>neko</title><link>https://log.console.so/experiments/neko/</link><description/><author/><guid>https://log.console.so/experiments/neko/</guid><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate></item><item><title>pod town</title><link>https://log.console.so/experiments/pod-town/</link><description/><author/><guid>https://log.console.so/experiments/pod-town/</guid><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate></item><item><title>WAGMI comics</title><link>https://log.console.so/experiments/wagmi/</link><description/><author/><guid>https://log.console.so/experiments/wagmi/</guid><pubDate>Tue, 26 Sep 2023 00:00:00 +0000</pubDate></item><item><title>About Us</title><link>https://log.console.so/about/</link><description>
+&lt;h2 id="intro">Intro &lt;a href="#intro">&lt;/a>&lt;/h2>
+&lt;p>We’re Console Labs. We’re all about that finance and making things fun. We’re diving deep into tech, data, web3, blockchain, and jotting down all the cool stuff we find, hoping to whip up something rad for everyone online.&lt;/p>
+&lt;p>Peep our &lt;a href="https://log.console.so/philosophy/">philosophy&lt;/a> and &lt;a href="https://log.console.so/mission/">mission&lt;/a>, or keep it fresh by catching our monthly updates.
+Oh, and btw, we’re like a sibling to &lt;a href="https://d.foundation">Dwarves&lt;/a>.&lt;/p>
+&lt;h2 id="website-">Website 💻 &lt;a href="#website-">&lt;/a>&lt;/h2>
+&lt;p>This site is where we show our face to the world. It’s all glammed up using &lt;a href="https://github.com/gohugoio/hugo">Hugo&lt;/a> with some custom magic by @monotykamary and @vincent.
+Scope out the repo &lt;a href="https://github.com/consolelabs/log.console.so">right here&lt;/a>.&lt;/p>
+&lt;h2 id="stay-connected">Stay Connected &lt;a href="#stay-connected">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Twitter: Hit us up &lt;a href="https://twitter.com/console_labs">@console_labs&lt;/a>&lt;/li>
+&lt;li>Email: Say hey &lt;a href="mailto:gm@console.so">gm@console.so&lt;/a>&lt;/li>
+&lt;li>Github: Check us out &lt;a href="https://github.com/consolelabs">github.com/consolelabs&lt;/a>&lt;/li>
+&lt;li>Also, catch us on Warpcast&lt;/li>
+&lt;/ul>
+&lt;h2 id="spilling-the-tea-">Spilling the Tea 🍵 &lt;a href="#spilling-the-tea-">&lt;/a>&lt;/h2>
+&lt;p>We kicked off Console Labs during the whole pandemic chaos in 2020. Since then, it’s been non-stop experimenting. Some stuff totally rocked, some didn’t, but all the stories are right here.&lt;/p>
+&lt;p>After each vibe check, we jot down the deets, thoughts, and what we learned. Han, tono, hnh, and vincent are keeping this site alive, with a little backup from the crew including anna, minh_cloud, and 0xLight.&lt;/p>
+&lt;p>We’re all out here with our own thoughts and vibes. It’s totally cool for us to get it wrong and flip our views. Always learning and getting deeper into all the things. 🧠&lt;/p>
+&lt;h2 id="roadmap">Roadmap &lt;a href="#roadmap">&lt;/a>&lt;/h2>
+&lt;p>We drew up our plans on a canvas, and every time something pops off, the canvas gets bigger. Wanna see what’s up? Check it: &lt;a href="https://roadmap.console.so">roadmap.console.so&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://log.console.so/images/roadmap.jpg"/>&lt;/p>
+&lt;h2 id="contribute">Contribute &lt;a href="#contribute">&lt;/a>&lt;/h2>
+&lt;p>If you love what we&amp;rsquo;re doing, feel free to open PRs or check out our backlog. Let’s make cool stuff together.&lt;/p></description><author/><guid>https://log.console.so/about/</guid><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate></item><item><title>API-first development</title><link>https://log.console.so/playbook/api-first/</link><description>&lt;p>by hnh&lt;/p>
+&lt;h2 id="background">Background &lt;a href="#background">&lt;/a>&lt;/h2>
+&lt;p>@Console Labs, our primary goal is to rapidly introduce new features and gather user feedback as quickly as possible. We understand that this approach isn&amp;rsquo;t flawless and can lead to regression bugs. However, at this stage of our product development, we are content with this strategy.&lt;/p>
+&lt;p>The challenge arises when we aim to develop something new within a short timeframe, typically one week or even just two days. This typically involves creating a small set of new features, starting from gathering requirements, designing the features, and then implementing them on both the backend and frontend.&lt;/p>
+&lt;p>We want to emphasize our focus on &amp;ldquo;both backend and frontend development&amp;rdquo; because this aspect is within our control as an engineering team. In a typical workflow, individuals often start with backend tasks such as designing the database and setting up APIs before moving on to implementation. However, we are exploring a different approach. We aim to build an API or establish a fixed data structure that allows the frontend team to work independently on their user interfaces. This way, we can streamline development and potentially reduce development time while maintaining control over our engineering processes.&lt;/p>
+&lt;h2 id="how">How &lt;a href="#how">&lt;/a>&lt;/h2>
+&lt;ol start="0">
+&lt;li>PO works on their requirement&lt;/li>
+&lt;li>Meeting: User story clarification/refinement discussion&lt;/li>
+&lt;li>Backend: provide a fixed JSON schema for the Frontend to work on&lt;/li>
+&lt;li>Frontend: Using mock json host on &lt;a href="https://github.com/consolelabs/mock-data">this repo&lt;/a> to work on your UI
+Backend: Work to implementation at the same time&lt;/li>
+&lt;li>Switch to API-call when api ready&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://log.console.so/playbook/../images/playbook/api-first.png"/>&lt;/p></description><author/><guid>https://log.console.so/playbook/api-first/</guid><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate></item><item><title>Data layer</title><link>https://log.console.so/playbook/data-layer/</link><description>&lt;p>by hnh&lt;/p>
+&lt;p>&lt;img src="https://log.console.so/playbook/../images/playbook/data-flow.png"/>&lt;/p>
+&lt;p>This data layer serves as the central source of information for various features such as tickers, price alerts, and token details. These features rely on the data within this layer to provide accurate and up-to-date information to users. In essence, it&amp;rsquo;s like the beating heart of the mochi ecosystem, ensuring that all the essential data is readily available for users to access and use.&lt;/p>
+&lt;h2 id="raw-data">Raw Data &lt;a href="#raw-data">&lt;/a>&lt;/h2>
+&lt;p>The raw data that powers our system originates from blockchain transaction data, which we can retrieve from various RPC sources. However, maintaining a stable and consistent RPC connection has proven to be challenging in our past experiences. To address this issue, we&amp;rsquo;ve adopted a different approach. We pull all the raw data into our Clickhouse database, where we store it for a period of 30 days before it&amp;rsquo;s automatically deleted.&lt;/p>
+&lt;p>This raw data plays a crucial role in providing transaction notifications to our users. Any transaction originating from wallets that we track is processed by our system. If a tracked wallet engages in a transaction, our system ensures that users are promptly notified about it. This process allows us to deliver real-time transaction updates and information to our users reliably.&lt;/p>
+&lt;h2 id="token-data">Token data &lt;a href="#token-data">&lt;/a>&lt;/h2>
+&lt;p>Token data encompasses several important aspects:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Token Info: This component provides project metadata, including details such as the project&amp;rsquo;s Twitter account, website, and a concise project description. We retrieve this information from sources like Etherscan or CoinGecko.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Price Info: Calculating price information ourselves can be redundant and resource-intensive. Instead, we rely on established sources like CoinGecko, which offers a stable API with reasonable costs. This allows us to provide accurate and up-to-date price data to our users without reinventing the wheel.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Dex Data: Dex data represents the most comprehensive information about each token. It includes details about which decentralized exchanges (dex) currently list the token and provides data such as the number of token holders or trading volume for each day. Rather than calculating this information in-house, we source it from multiple data sources and store it in our data layer. This approach ensures that our users have access to comprehensive dex-related data for each token without the need for extensive calculations on our part.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="gotchas">Gotchas &lt;a href="#gotchas">&lt;/a>&lt;/h2>
+&lt;h3 id="query-speed">Query speed &lt;a href="#query-speed">&lt;/a>&lt;/h3>
+&lt;p>When it comes to building online services, speed is a top priority. As our data layer continues to grow, we&amp;rsquo;ve implemented several optimization strategies to ensure efficient and fast data retrieval:&lt;/p>
+&lt;p>Caching Frequently Accessed Data: To address the need for frequently queried data like token prices and metadata (such as emoji associated with tokens), we employ short-lived Redis caching. This allows us to store this data temporarily in a highly responsive cache, reducing the need to query the upstream services or databases repeatedly for the same information. Caching helps deliver swift responses to user requests.
+Read Replicas and Data Partitioning: For data that cannot be cached due to its infrequent use or size, we&amp;rsquo;ve taken a two-pronged approach. First, we&amp;rsquo;ve created read replicas within our PostgreSQL layer. These replicas serve as copies of our main database, dedicated to handling read requests. This not only spreads the load but also improves query response times.
+Additionally, we&amp;rsquo;ve optimized data storage and retrieval by partitioning our most frequently accessed tables. Partitioning involves breaking these tables into smaller, more manageable parts based on certain criteria (e.g., time, category, or other relevant factors). This partitioning strategy significantly enhances query performance, as it reduces the amount of data that needs to be scanned or processed during each query. This combination of read replicas and data partitioning ensures that we can maintain high-speed access to our data even as our data layer continues to expand.&lt;/p>
+&lt;h3 id="data-realtime-ness">Data Realtime-ness &lt;a href="#data-realtime-ness">&lt;/a>&lt;/h3>
+&lt;p>Ensuring real-time data accuracy for crucial information like token prices is essential to avoid missing any market movements. However, for certain types of data like total assets and token info, real-time updates can be delayed without significantly impacting user experience. Here&amp;rsquo;s how we manage this balance:&lt;/p>
+&lt;p>Real-time Data for Price Updates: For data that requires real-time accuracy, such as token prices, we prioritize instant updates. This ensures that our users receive the most up-to-date information, especially those who rely on timely market data. Real-time data is essential to provide users with the information they need to make informed decisions in the fast-paced world of cryptocurrencies.&lt;/p>
+&lt;p>Delayed Data for Less Critical Information: To reduce stress on our system and enhance the overall user experience, we introduce a slight delay in updating less critical information, such as total assets and token details. This delay allows us to optimize data processing and avoid overwhelming our resources. From the perspective of most users, this data still appears to be served instantly, ensuring a seamless experience.&lt;/p>
+&lt;p>Prioritizing Real-time Data for Top Users: Recognizing the importance of real-time data for our top users, we&amp;rsquo;ve implemented a ranking system. The most active users or those with specific access privileges can enjoy the benefit of receiving data in real-time with minimal delay. This approach ensures that our highest-priority users have access to the most critical data without compromise.&lt;/p>
+&lt;p>Background Jobs for Data Handling: To manage these data updates efficiently, we handle most data processing as background jobs. This allows us to update and synchronize information without disrupting the user interface or slowing down the system&amp;rsquo;s responsiveness. By running these tasks in the background, we maintain a balance between real-time data needs and system stability.&lt;/p>
+&lt;p>In summary, our approach involves a careful balance between real-time data for critical information and slightly delayed updates for less critical data. This strategy, combined with a ranking system and background job processing, allows us to provide both real-time accuracy and a smooth user experience while managing system resources effectively.&lt;/p>
+&lt;h3 id="maintain-an-affordable-sassinfras-price">Maintain an affordable SaSS/infras price &lt;a href="#maintain-an-affordable-sassinfras-price">&lt;/a>&lt;/h3>
+&lt;p>Maintaining a reasonable cost for the data layer is crucial for the sustainability of your online service. Here&amp;rsquo;s how you approach cost management:&lt;/p>
+&lt;ol>
+&lt;li>Start with Third-Party Services: When in doubt, opting for third-party services is often the most cost-effective and efficient choice. These services are specialized and can save you time and resources in the short term. Even if they come with a monthly cost, as you mentioned, they often offer a great value proposition by allowing you to focus on other aspects of your platform.&lt;/li>
+&lt;li>Continuous Evaluation: Periodically assess the cost-effectiveness of the third-party services you use. Determine if the expense is justified by the benefits they provide. If a service becomes too costly or if you outgrow it, consider alternatives or building an in-house solution.&lt;/li>
+&lt;li>Building In-House Solutions: As your platform matures and your needs become more complex, it may become financially prudent to build certain services in-house. By doing so, you have more control over costs, scalability, and customization. However, this should be a well-considered decision, as it often involves higher initial investments in development and ongoing maintenance.&lt;/li>
+&lt;li>Cost Monitoring and Optimization: Implement robust cost monitoring and optimization practices. Keep an eye on data usage, query efficiency, and infrastructure costs. Use cloud provider tools to track spending and optimize resources accordingly. Often, small adjustments can lead to significant cost savings.&lt;/li>
+&lt;/ol></description><author/><guid>https://log.console.so/playbook/data-layer/</guid><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate></item><item><title>Leverage Mochi balances</title><link>https://log.console.so/playbook/integrate-mochi-balances/</link><description>&lt;p>by hnh, minh_cloud&lt;/p></description><author/><guid>https://log.console.so/playbook/integrate-mochi-balances/</guid><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate></item><item><title>log</title><link>https://log.console.so/blog/log/</link><description>&lt;p>A list of changes and updates to our experiments.&lt;/p>
+&lt;ul>
+&lt;li>RSS feed, regular updates.&lt;/li>
+&lt;li>&lt;a href="https://newsletter.console.so">Newsletter&lt;/a> for frens, monthly updates.&lt;/li>
+&lt;/ul>
+&lt;h2 id="september-2023">September 2023 &lt;a href="#september-2023">&lt;/a>&lt;/h2></description><author/><guid>https://log.console.so/blog/log/</guid><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate></item><item><title>Meaningful commit message</title><link>https://log.console.so/playbook/meaningful-commit/</link><description>&lt;p>by hnh&lt;/p>
+&lt;h2 id="problems--background">Problems &amp;amp; Background &lt;a href="#problems--background">&lt;/a>&lt;/h2>
+&lt;p>Have you ever been frustrated by reading an app&amp;rsquo;s changelog that&amp;rsquo;s full of unhelpful information? It&amp;rsquo;s like they don&amp;rsquo;t care about their product or their users. You might have seen changelogs like this:&lt;/p>
+&lt;blockquote>
+&lt;p>2.11.4&lt;/p>
+&lt;ul>
+&lt;li>Some bugs fixed&lt;/li>
+&lt;/ul>
+&lt;p>or&lt;/p>
+&lt;ul>
+&lt;li>Fix bugs and improve UI/UX&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>These changelogs are confusing and don&amp;rsquo;t provide any meaningful insights for users. Changelogs are meant for people, not machines. They serve as a way for us to communicate with our users. Whether you&amp;rsquo;re working on a big or small software project, it&amp;rsquo;s essential to create a useful changelog.&lt;/p>
+&lt;p>In the early stages, our commit messages were similar, not designed for humans, product teams, or even fellow engineers. They looked something like this:&lt;/p>
+&lt;blockquote>
+&lt;p>🐞 Bugs&lt;/p>
+&lt;ul>
+&lt;li>Correct releaserc cfg (4337ccb)&lt;/li>
+&lt;li>Disable webpage preview in tip message (1fe0fae)&lt;/li>
+&lt;li>Remove extra @ in tip message (e6ac302)&lt;/li>
+&lt;li>Sentry check ticker command (#64) (f81c9ca)&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;p>Initially, we didn&amp;rsquo;t see anything wrong with these messages; in fact, we considered them good. However, as time passed, we realized that we were missing essential context, such as which features, platforms, or affected areas these commits related to.&lt;/p>
+&lt;p>So, we decided to change the way we write commit messages and put in a bit more effort to enhance our notification platform. Now, with each release, we have clear and informative messages like this:&lt;/p>
+&lt;p>&lt;img src="https://log.console.so/playbook/../images/playbook/changelog.png"/>&lt;/p>
+&lt;h2 id="how">How &lt;a href="#how">&lt;/a>&lt;/h2>
+&lt;p>We&amp;rsquo;ve adopted a specific syntax when creating a new commit:&lt;/p>
+&lt;p>&lt;code>level(scope): message&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>level&lt;/strong>: This indicates the nature of the change, such as a refactor, improvement, chore, fix, or feature.&lt;/li>
+&lt;li>&lt;strong>scope&lt;/strong>: This specifies which feature or area is affected by the changes.&lt;/li>
+&lt;li>&lt;strong>message&lt;/strong>: This is where we explain to users what they need to know about the update.&lt;/li>
+&lt;/ul>
+&lt;h3 id="checklist">Checklist &lt;a href="#checklist">&lt;/a>&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Focus on what matters most to users: new features, bug fixes, and improvements in terms of UI/speed.&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Write messages with users in mind, not just for fellow engineers.&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Always consolidate your PRs into a single commit to maintain a clean and coherent commit history.&lt;/li>
+&lt;/ul></description><author/><guid>https://log.console.so/playbook/meaningful-commit/</guid><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate></item><item><title>Philosophy</title><link>https://log.console.so/philosophy/</link><description>&lt;p>We’re all about shaping a future where tech is chill, super fun, and all about those money vibes. Here’s the scoop on the four main vibes guiding our crew:&lt;/p>
+&lt;h2 id="small-but-sharp-">Small but Sharp 🔍 &lt;a href="#small-but-sharp-">&lt;/a>&lt;/h2>
+&lt;p>We’re digging the idea of creating things that are small but ace at what they do. We aim for simplicity and effectiveness, making sure every tool we make nails its job and stands out in its own way. In a world that can be too much, we keep it simple and focused.&lt;/p>
+&lt;h2 id="financial-centric-">Financial-Centric 💰 &lt;a href="#financial-centric-">&lt;/a>&lt;/h2>
+&lt;p>We know that managing money is gonna be a big deal in the future, so we’re focused on making apps and tools that help people do it safely. We want to give everyone easy and safe access to handle their money and learn more about it. Our goal? A future where everyone gets their finances.&lt;/p>
+&lt;h2 id="accessible-">Accessible 🌐 &lt;a href="#accessible-">&lt;/a>&lt;/h2>
+&lt;p>We stand for a digital world that’s open to all, removing barriers and starting new conversations and collaborations. Making things accessible to everyone, everywhere is what we’re all about. We want everyone, no matter where they are, to use our tools and feel included.&lt;/p>
+&lt;h2 id="gamified-">Gamified 🎮 &lt;a href="#gamified-">&lt;/a>&lt;/h2>
+&lt;p>We&amp;rsquo;re gamers at heart, and that passion is in everything we make. We know people love fun – it’s irresistible but can be hard to make. So, we’re turning every interaction into a cool adventure, where every challenge is an opportunity to level up.&lt;/p>
+&lt;p>That’s us – making sharp tools, being open to all, having fun, and keeping an eye on the financial future. These four vibes are what Console Labs is all about. They guide our way and help us build and explore.&lt;/p></description><author/><guid>https://log.console.so/philosophy/</guid><pubDate>Fri, 15 Sep 2023 00:00:00 +0000</pubDate></item><item><title>Continuous Integration</title><link>https://log.console.so/playbook/ci-cd/</link><description>&lt;p>by quang, hnh&lt;/p>
+&lt;h2 id="what">What &lt;a href="#what">&lt;/a>&lt;/h2>
+&lt;p>Continuous Integration (CI) is a development practice where developers integrate code into a shared repository frequently, preferably several times a day. Each integration can then be verified by an automated build and automated tests. While automated testing is not strictly part of CI it is typically implied.&lt;/p>
+&lt;p>One of the key benefits of integrating regularly is that you can detect errors quickly and locate them more easily. As each change introduced is typically small, pinpointing the specific change that introduced a defect can be done quickly.&lt;/p>
+&lt;h2 id="importance-of-ci">Importance of CI &lt;a href="#importance-of-ci">&lt;/a>&lt;/h2>
+&lt;p>In order to understand the importance of CI, it&amp;rsquo;s helpful first to discuss some pain points that often arise due to the absence of CI. Without CI, developers must manually coordinate and communicate when they are contributing code to the end product. This coordination extends beyond the development teams to the rest of the organization, as well. Product teams must coordinate when to sequentially launch features and fixes and which team members will be responsible.&lt;/p>
+&lt;p>Without a robust CI pipeline, a disconnect between the engineering team and the rest of the org can form. Communication between product and engineering can be cumbersome. Engineering becomes a black box which the rest of the team inputs requirements and features and maybe gets expected results back. It will make it harder for engineering to estimate time of delivery on requests because the time to integrate new changes becomes an unknown risk.&lt;/p>
+&lt;h2 id="cicd--console-labs">CI/CD @ Console Labs &lt;a href="#cicd--console-labs">&lt;/a>&lt;/h2>
+&lt;p>At Console Labs, achieving an efficient deployment pipeline is done by following these best practices:&lt;/p>
+&lt;ul>
+&lt;li>The process for releasing/deploying software MUST be repeatable and reliable&lt;/li>
+&lt;li>Automate everything - automate all the tasks you repeatedly do, and this tends to lead to reliability&lt;/li>
+&lt;li>Done means &amp;ldquo;released.&amp;rdquo;&lt;/li>
+&lt;li>Write good commit message, since they will directly translate to product team changelogs&lt;/li>
+&lt;/ul>
+&lt;h2 id="toolset">Toolset &lt;a href="#toolset">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>Docker&lt;/li>
+&lt;li>Github action&lt;/li>
+&lt;li>Commitlint&lt;/li>
+&lt;li>Semantic-release&lt;/li>
+&lt;li>Kustomization&lt;/li>
+&lt;li>ArgoCD&lt;/li>
+&lt;/ul>
+&lt;h2 id="environment-setup">Environment setup &lt;a href="#environment-setup">&lt;/a>&lt;/h2>
+&lt;p>There is 5 different environments for most of our services.&lt;/p>
+&lt;ul>
+&lt;li>Local&lt;/li>
+&lt;li>CI&lt;/li>
+&lt;li>Dev&lt;/li>
+&lt;li>Preview&lt;/li>
+&lt;li>Production&lt;/li>
+&lt;/ul>
+&lt;p>Preview and Production share the same underlying database/infras, we separated them for user experiences.&lt;/p>
+&lt;h2 id="checklist">Checklist &lt;a href="#checklist">&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Write a meaningful commit`&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> All tests passed&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Backward compatible for all APIs &amp;amp; migrations&lt;/li>
+&lt;/ul>
+&lt;h2 id="deployment-flow">Deployment flow &lt;a href="#deployment-flow">&lt;/a>&lt;/h2>
+&lt;p>&lt;img src="https://log.console.so/playbook/../images/playbook/ci-cd.png"/>&lt;/p></description><author/><guid>https://log.console.so/playbook/ci-cd/</guid><pubDate>Thu, 14 Sep 2023 00:00:00 +0000</pubDate></item><item><title>Format a Mochi profile &amp; Number</title><link>https://log.console.so/playbook/format-profile-number/</link><description>&lt;p>When it comes to a UI rendering, there is no such things as a &amp;ldquo;correct way&amp;rdquo;&lt;/p></description><author/><guid>https://log.console.so/playbook/format-profile-number/</guid><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate></item><item><title>Integrate new chain</title><link>https://log.console.so/playbook/add-new-chains/</link><description>&lt;p>by hnh, vhbien&lt;/p>
+&lt;p>In the rapidly evolving blockchain industry, it&amp;rsquo;s crucial to keep up with the pace of change. Here&amp;rsquo;s a quick overview of how we seamlessly integrate new chains into the Mochi system, with the caveat that this method is specific to EVM-based blockchains:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Product Preparation&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Pull raw data into clickhouse&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Ticker, Watchlist Token Info&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Wallet tracking on this new chain&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Show assets in profile&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Transfer / Tip / Airdrop / Payme / Paylink&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Withdraw&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Deposit&lt;/li>
+&lt;/ul>
+&lt;h3 id="0-product-preparation">[0] Product Preparation &lt;a href="#0-product-preparation">&lt;/a>&lt;/h3>
+&lt;p>In this section, most of the tasks require manual handling.&lt;/p>
+&lt;p>&lt;strong>Add new chain to supported chain list&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>Go to &lt;a href="https://github.com/consolelabs/mochi-pay-api">Mochi Pay&lt;/a> repository.&lt;/li>
+&lt;li>Create a migration file as show below.&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-sql">INSERT INTO &amp;quot;public&amp;quot;.&amp;quot;product_supported_chains&amp;quot; (&amp;quot;chain_id&amp;quot;, &amp;quot;name&amp;quot;, &amp;quot;symbol&amp;quot;, &amp;quot;rpc&amp;quot;, &amp;quot;explorer&amp;quot;, &amp;quot;icon&amp;quot;, &amp;quot;is_evm&amp;quot;,) VALUES
+('1', 'Ethereum Mainnet', 'ETH', 'https://eth.llamarpc.com', 'https://etherscan.io', 'https://cdn.discordapp.com/emojis/928216430451761172.png?size=240&amp;amp;quality=lossless', 't'),
+&lt;/code>&lt;/pre>
+&lt;ol start="3">
+&lt;li>use the &lt;code>/chains&lt;/code> command to see the new changes.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;strong>Add token emojis&lt;/strong>
+To enhance the aesthetics of Mochi, we aim to display token emojis whenever possible. Currently, please reach out to &lt;code>@minh_cloud&lt;/code> for assistance with this task.&lt;/p>
+&lt;h3 id="1-pull-raw-data-into-clickhouse">[1] Pull raw data into clickhouse &lt;a href="#1-pull-raw-data-into-clickhouse">&lt;/a>&lt;/h3>
+&lt;p>To store blockchain raw events data in ClickHouse, follow these steps:&lt;/p>
+&lt;ol>
+&lt;li>Go to &lt;a href="https://github.com/consolelabs/infrastructure">Infras&lt;/a> repository&lt;/li>
+&lt;li>Create a service with the following configuration, similar to the &lt;a href="https://github.com/consolelabs/infrastructure/tree/main/data-warehouse">example&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;pre>&lt;code class="language-yaml">evm:
+chainName: base
+chainId: 8453
+rpcServers:
+- https://1rpc.io/base
+- https://base.meowrpc.com
+- https://mainnet.base.org
+- https://base.blockpi.network/v1/rpc/public
+syncFromBlockNumber: 2769582
+&lt;/code>&lt;/pre>
+&lt;h3 id="2-ticker-watchlist-and-token-info">[2] Ticker, watchlist and Token info &lt;a href="#2-ticker-watchlist-and-token-info">&lt;/a>&lt;/h3>
+&lt;p>This step should work automatically. Simply go to Mochi Clients and test out some well-known tokens to ensure that everything is functioning as expected.&lt;/p>
+&lt;p>&lt;img src="https://log.console.so/playbook/../images/playbook/ticker.png"/>&lt;/p>
+&lt;h3 id="3-wallet-tracking">[3] Wallet tracking &lt;a href="#3-wallet-tracking">&lt;/a>&lt;/h3>
+&lt;p>Wallet tracking is managed within the &lt;a href="https://github.com/consolelabs/account-telemetry">account-telemetry&lt;/a> repository, follow these tasks:&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>Verify Clickhouse Database Data&lt;/strong>:
+&lt;ul>
+&lt;li>Check the Clickhouse database to ensure it contains data for the new chains. Specifically, verify the &lt;code>latest_block_timestamp&lt;/code> table to confirm that it has the necessary records for the new chain.&lt;/li>
+&lt;li>Ensure that the &lt;code>latest_block_timestamp&lt;/code> column is up to date and reflects the latest block timestamp for the new chain.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Update &lt;code>utils&lt;/code> package&lt;/strong>:
+&lt;ul>
+&lt;li>Update the &lt;code>chain.go&lt;/code> file to add support for the new chain. This involves adding the necessary configurations and logic to handle the data retrieval and notification process for the new chain.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>By completing these tasks, you&amp;rsquo;ll ensure that wallet tracking in the account-telemetry repository works seamlessly with the new chains, allowing for accurate notifications to users when their tracked accounts receive new transactions.&lt;/p>
+&lt;h3 id="4-show-assets-in-profile">[4] Show assets in Profile &lt;a href="#4-show-assets-in-profile">&lt;/a>&lt;/h3>
+&lt;p>&lt;strong>NOTE: This is the primary step before doing any other below steps&lt;/strong>
+In this part, it is essential to ensure that all widely-recognized tokens from the new chains are added to our database whitelist. To fulfill this requirement, we can follow these steps.&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>mochi-pay-api&lt;/code>
+&lt;ul>
+&lt;li>Seed new chain&amp;rsquo;s info to the table &lt;code>chains&lt;/code>&lt;/li>
+&lt;li>Seed tokens of new chain&amp;rsquo;s to the table &lt;code>tokens&lt;/code>
+&lt;ul>
+&lt;li>Find list listed tokens in the coingeko via this page &lt;a href="https://www.coingecko.com/en/all-cryptocurrencies">https://www.coingecko.com/en/all-cryptocurrencies&lt;/a> with proper filter.&lt;/li>
+&lt;li>Copy content of search result and ask ChatGPT help to extract list of token symbols.&lt;/li>
+&lt;li>Using result of above script as list input tokens to generate file migration, check &lt;code>mochi-pay-api/script&lt;/code> for further information.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>mochi-api&lt;/code>
+&lt;ul>
+&lt;li>Update all utils at &lt;code>utils&lt;/code> folder to support the new chains. Such as: &lt;code>ConvertInputToChainId&lt;/code>, &lt;code>ConvertChainToChainId&lt;/code> …&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="5-transfer--tip--airdrop--payme--paylink">[5] Transfer / Tip / Airdrop / Payme / Paylink &lt;a href="#5-transfer--tip--airdrop--payme--paylink">&lt;/a>&lt;/h3>
+&lt;p>Everything must be done at &lt;strong>[4]&lt;/strong>, except also need to update list chainIds in the function &lt;code>ListOrCreate&lt;/code> of repository mochi-pay-api to support creating new inapp wallet that is used for transfer/deposit/withdraw in the Mochi.&lt;/p>
+&lt;h3 id="6-withdraw">[6] Withdraw &lt;a href="#6-withdraw">&lt;/a>&lt;/h3>
+&lt;p>This is actually done at &lt;strong>[4]&lt;/strong> and &lt;strong>[5]&lt;/strong>. A token can be withdrawn when it is whitelist in the DB.&lt;/p>
+&lt;h3 id="7-deposit">[7] Deposit &lt;a href="#7-deposit">&lt;/a>&lt;/h3>
+&lt;p>To enable support for deposits on a new chain, follow these essential steps:&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>Compile and Deploy Deposit Contract&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Compile the deposit contract using the contract available in the consolelabs/contract-tip-bot repository.&lt;/li>
+&lt;li>Deploy the compiled deposit contract to the new chain. Ensure that the deployment is successful and that the contract is functioning as expected.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Change Ownership to Centralized Wallet Address&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Change the ownership of the deployed deposit contract to a centralized wallet address.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Seed Deposit Contract Information&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Update the &lt;code>mochi_pay_api&lt;/code> by adding information about the newly deployed deposit contract to the &lt;code>deposit_contracts&lt;/code> table. This includes details such as the contract address and other relevant information.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Test Deposits&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>Perform testing to ensure that deposits work smoothly on the new chain. Test depositing a few tokens to verify that the deposit functionality is working as intended.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol></description><author/><guid>https://log.console.so/playbook/add-new-chains/</guid><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate></item><item><title>Mission</title><link>https://log.console.so/mission/</link><description>&lt;p>// thought about future + software + finance
+Believe in the future where everyone has to involve in financial activity&lt;/p>
+&lt;p>// and we want to
+Building financial-centric software&lt;/p>
+&lt;p>//
+Part of the Dwarves&lt;/p>
+&lt;p>// build and chill
+Building a product team&lt;/p>
+&lt;p>// the financial data layer&lt;/p>
+&lt;h2 id="financial-centric">Financial-centric &lt;a href="#financial-centric">&lt;/a>&lt;/h2>
+&lt;p>Recognizing the inevitability of financial activities in the future, we dedicate our efforts to building software that safeguards and enriches people’s financial journeys.&lt;/p>
+&lt;p>We know dealing with money is going to be a big part of the future, so we’re dedicated to making software that helps peeps do it safely and navigate through the finance world.&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Secure the Bag&lt;/strong>: Every creation of ours is your key to handling moolah safely and getting those financial gains.&lt;/li>
+&lt;li>&lt;strong>Safe and Sound&lt;/strong>: Everything we make aims to give people safe and easy access to handle their money and learn more about it.
+Crafting software that helps peeps navigate the finance world safely is our jam!&lt;/li>
+&lt;/ul>
+&lt;p>Every solution we develop is centered around providing safe, secure, and empowering access to financial resources and knowledge, preparing individuals for a flourishing financial future.
+We’re looking at a future where everyone’s got their money game on point. We’re here to build the tech that makes finance a breeze, so everyone can make those smart moves and get that bread.&lt;/p>
+&lt;p>We see a future where everyone’s in tune with their finances. That’s why we’re here, building the cool tech that makes understanding and accessing finance a breeze, helping everyone make those smart, secure money moves!&lt;/p></description><author/><guid>https://log.console.so/mission/</guid><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate></item><item><title>Shared UI library in multiple platforms</title><link>https://log.console.so/playbook/shared-ui-lib/</link><description>&lt;p>by hnh&lt;/p>
+&lt;h2 id="background">Background &lt;a href="#background">&lt;/a>&lt;/h2>
+&lt;p>Earlier this year, we introduced a new version of Telegram for Mochi, but it came with some new challenges.&lt;/p>
+&lt;p>Up until now, we&amp;rsquo;ve been using a single backend system to support all of our services. This approach was taken to ensure a smooth experience for both users and engineers across different platforms. However, a problem arose when it came to the user interface. We found ourselves dealing with two different sets of rules (Discord &amp;amp; Telegram) for how the interface should look and behave. This complexity kept growing as we added new features and concepts. Eventually, we reached a point where it became nearly impossible to maintain consistency between the two platforms. Worth noting that, we also aim to have a Web, Mobile &amp;amp; Raycast versions for Mochi.&lt;/p>
+&lt;p>To solve these problems and make sure everyone has a similar and easy experience, we realized we need a library that contains all our UI stuff that everyone can use.&lt;/p>
+&lt;p>But, making this library work on different platforms isn&amp;rsquo;t simple. It needs to be easy enough for our frontend team to use, also flexible enough to work on all platforms.&lt;/p>
+&lt;h2 id="wins">Wins &lt;a href="#wins">&lt;/a>&lt;/h2>
+&lt;h3 id="flatten-the-learning-curves">Flatten the learning curves. &lt;a href="#flatten-the-learning-curves">&lt;/a>&lt;/h3>
+&lt;p>You might not know this, but our frontend team only has 2 full-time members who really understand all the business and technical stuff. And we have 3 platforms to take care of. So, we definitely need some extra help from our community through our &amp;lsquo;Bounty Program.&amp;rsquo;&lt;/p>
+&lt;p>Luckily, thanks to our shared library, the process is pretty simple now.&lt;/p>
+&lt;p>Before:&lt;/p>
+&lt;pre>&lt;code>A: Hey, can you help me with this feature?
+A: This feature will be on Discord, Telegram, and the website. Here's how it should work on each platform.
+A: Make sure to create test files for all the platforms because we make changes frequently.
+A: Oh, and please document it somewhere because I might forget.
+B: ...
+&lt;/code>&lt;/pre>
+&lt;p>Now:&lt;/p>
+&lt;pre>&lt;code>A: Hey, can you help me with this feature?
+A: All you need to do is use a function from a well-tested and clearly defined source.
+B: Sure!
+&lt;/code>&lt;/pre>
+&lt;h3 id="consistency-throughout-the-systems">Consistency throughout the systems &lt;a href="#consistency-throughout-the-systems">&lt;/a>&lt;/h3>
+&lt;p>Dealing with the nitty-gritty details can be quite challenging. Often, we overlook small things like how to display numbers or whether we should add a period at the end of a sentence.&lt;/p>
+&lt;p>Handling these details on just one platform is tough, and when it comes to managing them on five different platforms, it feels nearly impossible. Our daily meetings are increasingly filled with questions like, &amp;ldquo;Hey, did you make this change on Discord but forget about it on Telegram?&amp;rdquo; and vice versa.&lt;/p>
+&lt;p>After we introduced &lt;code>mochi-ui&lt;/code> our focus shifted from dealing with technical issues to more meaningful questions like, &amp;ldquo;Does this feature actually make sense?&amp;rdquo; or &amp;ldquo;Hey, this is a bug report from a user, can someone look into it?&amp;rdquo; These are the kinds of challenges we are more than happy to face.&lt;/p>
+&lt;h2 id="gotchas">Gotchas &lt;a href="#gotchas">&lt;/a>&lt;/h2>
+&lt;p>Of course, there&amp;rsquo;s no one-size-fits-all solution, especially on the first attempt. We&amp;rsquo;ve identified some issues, and we&amp;rsquo;d be glad to have your hand in addressing them:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Lack of Local Preview&lt;/strong>: Currently, we don&amp;rsquo;t have a way to preview changes locally. The only option is to update the package and check it in our development environments.&lt;/li>
+&lt;li>&lt;strong>Text-Based Components&lt;/strong>: Some of our components are still text-based, which could be limiting if we need to use them in web applications.&lt;/li>
+&lt;li>&lt;strong>Single point of failure&lt;/strong>: Since &amp;lsquo;mochi-ui&amp;rsquo; is centralized as the only implementation, we must ensure it&amp;rsquo;s robust and fast. Some rendering logic still requires API calls, and we need to find ways to eliminate this dependency.&lt;/li>
+&lt;/ul>
+&lt;h2 id="final-thoughts">Final thoughts &lt;a href="#final-thoughts">&lt;/a>&lt;/h2>
+&lt;p>This approach is not and never a silver-bullet and may not be appropriate in all cases. However, we believe that this implementation has made our lives a bit less stressful by allowing us to shift our focus to other areas.&lt;/p>
+&lt;p>This blog post is part of our Mochi Frontend Practices, also check out:&lt;/p>
+&lt;ul>
+&lt;li>How we using mock data to fasten our UI development&lt;/li>
+&lt;li>Guidelines: How to render currency and profile name&lt;/li>
+&lt;li>Applying state machine to switch UI view&lt;/li>
+&lt;/ul></description><author/><guid>https://log.console.so/playbook/shared-ui-lib/</guid><pubDate>Mon, 11 Sep 2023 00:00:00 +0000</pubDate></item></channel></rss>
