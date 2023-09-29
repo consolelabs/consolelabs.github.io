@@ -163,7 +163,11 @@ main > ul > li > a {
   text-decoration: underline;
 }
 
-main > ul:has(li > a[href^="/"]:only-child) {
+.dual-list > ul {
+  columns: 2;
+}
+
+.single-list > ul {
   columns: 2;
 }
 
