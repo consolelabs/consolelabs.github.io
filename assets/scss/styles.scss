@@ -235,11 +235,18 @@ ul:has(li input[type="checkbox"]) {
   padding: 0px;
 }
 
-ul li a {
+section > ul li a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: calc(var(--nav-sidebar-width) + var(--nav-sidebar-offset));
+  background-color: white;
+}
+
+ul li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   background-color: white;
 }
 
@@ -328,10 +335,10 @@ a:visited {
   }
 
   ul li a {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: calc(var(--nav-sidebar-width) + var(--nav-sidebar-offset));
+    background-color: black;
+  }
+
+  ul {
     background-color: black;
   }
 }
