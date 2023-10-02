@@ -171,6 +171,37 @@ main > ul > li > a {
   columns: 2;
 }
 
+/* Tables and Profile */
+.profile img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+tr {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+td {
+  padding: 0px 20px;
+  max-width: 300px;
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+td:has(img) {
+  padding: 0px;
+  line-height: 0px;
+}
+
 #TableOfContents > ul > li > a {
   text-decoration: underline;
 }
