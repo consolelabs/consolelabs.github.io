@@ -90,6 +90,26 @@
         }
         </script>
         {{ end }}
+        <style>
+            body {
+              visibility: hidden;
+              opacity: 0;
+            }
+        </style>
+        <noscript>
+            <style>
+              body {
+                visibility: visible;
+                opacity: 1;
+              }
+            </style>
+          </noscript>
+        <script type="text/javascript">
+            window.addEventListener('DOMContentLoaded', function () {
+                document.body.style.visibility = 'visible';
+                document.body.style.opacity = 1;
+            });
+        </script>
     </head>
 
     {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
