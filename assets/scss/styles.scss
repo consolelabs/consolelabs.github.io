@@ -179,6 +179,13 @@ main > ul > li > a {
   aspect-ratio: 1 / 1;
 }
 
+.profile object {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
 table, th, td {
   border: 1px solid;
   border-collapse: collapse;
