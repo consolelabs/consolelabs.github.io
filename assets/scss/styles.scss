@@ -240,12 +240,14 @@ section > ul li a {
   overflow: hidden;
   text-overflow: ellipsis;
   width: calc(var(--nav-sidebar-width) + var(--nav-sidebar-offset));
+  background-color: white;
 }
 
 ul li {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  background-color: white;
 }
 
 ul li a:hover {
@@ -332,12 +334,20 @@ a:visited {
     border-color: white;
   }
 
-  ul li a {
+  ul {
     background-color: black;
   }
 
-  ul {
+  ul li {
     background-color: black;
+  }
+
+  ul li a {
+    background-color: inherit;
+  }
+
+  section > ul li a {
+    background-color: inherit;
   }
 }
 
