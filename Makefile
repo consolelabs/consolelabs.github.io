@@ -16,6 +16,12 @@ build:
 run:
 	hugo server
 
+build-target:
+	mkdir -p vault content && \
+	rsync -avh $(path) ./vault/ --delete && \
+	obsidian-export ./vault/ ./content/ && \
+	hugo --minify
+
 run-target:
 	mkdir -p vault content && \
 	rsync -avh $(path) ./vault/ --delete && \
