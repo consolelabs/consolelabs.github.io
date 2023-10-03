@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+{{ $homepage := .Site.GetPage "/blog/log" }}
+
+{{ with $homepage }}
+  {{ if $homepage.Params.notice -}}
+    <div class="notice">{{ .Params.notice }}</div>
+  {{ end }}
+
+  {{ if $homepage.Params.toc -}}
+    <aside class="toc">{{ .TableOfContents }}</aside>
+  {{ end }}
+
+  {{ .Content }}
+{{ end }}
+
+{{ partial "footer.html" . }}
