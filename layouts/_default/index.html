@@ -11,6 +11,16 @@
     <aside class="toc">{{ .TableOfContents }}</aside>
   {{ end }}
 
+  {{ if $homepage.Params.authors -}}
+    <aside class="authors">
+      by
+      {{ $authorsLen := sub (len $.Params.authors) 1}}
+      {{ range $i, $e := .Params.authors }}
+      <a href="/members/{{ $e }}">{{ $e }}</a>{{ if (gt $authorsLen $i) }},{{end}}
+      {{ end }}
+    </aside>
+  {{ end }}
+
   {{ .Content }}
 {{ end }}
 
