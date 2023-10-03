@@ -128,14 +128,6 @@
             <main>
                 <!-- <a href="/">{{ .Site.Title }}</a> / <a href="{{ .RelPermalink }}">{{ .Title }}</a> -->
 
-                {{ if .Params.notice -}}
-                <div class="notice">{{ .Params.notice }}</div>
-                {{ end }}
-
-                {{ if .Params.toc -}}
-                <aside class="toc">{{ .TableOfContents }}</aside>
-                {{ end }}
-
                 {{ if not .IsHome }}
                     {{ if .Params.authors -}}
                     <aside class="authors">
@@ -146,4 +138,12 @@
                         {{ end }}
                     </aside>
                     {{ end }}
+                {{ end }}
+
+                {{ if .Params.notice -}}
+                <div class="notice">{{ .Params.notice }}</div>
+                {{ end }}
+
+                {{ if .Params.toc -}}
+                <aside class="toc">{{ .TableOfContents }}</aside>
                 {{ end }}

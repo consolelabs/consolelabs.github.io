@@ -3,22 +3,22 @@
 {{ $homepage := .Site.GetPage "/blog/log" }}
 
 {{ with $homepage }}
+  {{ if $homepage.Params.authors -}}
+  <aside class="authors">
+    by
+    {{ $authorsLen := sub (len $homepage.Params.authors) 1}}
+    {{ range $i, $e := $homepage.Params.authors }}
+    <a href="/members/{{ $e }}">{{ $e }}</a>{{ if (gt $authorsLen $i) }},{{end}}
+    {{ end }}
+  </aside>
+  {{ end }}
+
   {{ if $homepage.Params.notice -}}
     <div class="notice">{{ .Params.notice }}</div>
   {{ end }}
 
   {{ if $homepage.Params.toc -}}
     <aside class="toc">{{ .TableOfContents }}</aside>
-  {{ end }}
-
-  {{ if $homepage.Params.authors -}}
-    <aside class="authors">
-      by
-      {{ $authorsLen := sub (len $homepage.Params.authors) 1}}
-      {{ range $i, $e := $homepage.Params.authors }}
-      <a href="/members/{{ $e }}">{{ $e }}</a>{{ if (gt $authorsLen $i) }},{{end}}
-      {{ end }}
-    </aside>
   {{ end }}
 
   {{ .Content }}
