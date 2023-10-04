@@ -19,6 +19,8 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 h1,
@@ -30,23 +32,19 @@ h4 {
 
 h1 {
   font-size: 45px;
-  text-transform: capitalize;
   display: none;
 }
 
 h2 {
   font-size: 30px;
-  text-transform: capitalize;
 }
 
 h3 {
   font-size: 20px;
-  text-transform: capitalize;
 }
 
 h4 {
   font-size: 15px;
-  text-transform: capitalize;
 }
 
 q {
@@ -150,13 +148,14 @@ nav.menu ul {
 /* Header, main and footer */
 main {
   padding: 45px;
-  max-width: 700px;
+  max-width: 100%;
   float: left;
 }
 
 main > ul {
   line-height: 25px;
   margin: 0;
+  word-break: break-all;
 }
 
 main > ul > li > a {
@@ -222,7 +221,8 @@ td:has(img) {
 #TableOfContents li {
   list-style-type: decimal-leading-zero;
   list-style-position: inside;
-  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .notice {
@@ -275,7 +275,6 @@ ul:has(li input[type="checkbox"]) {
 }
 
 ul li a {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   width: calc(var(--nav-sidebar-width) + var(--nav-sidebar-offset));
@@ -373,6 +372,14 @@ a:visited {
     width: calc(var(--nav-sidebar-width) + var(--nav-sidebar-offset));
     background-color: black;
   }
+
+  ul li a {
+    background-color: inherit;
+  }
+
+  section > ul li a {
+    background-color: inherit;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -407,23 +414,25 @@ a:visited {
   }
 }
 
-@media (max-width: 650px) and (min-width: 501px) {
-  nav .site-nav section {
-    width: calc(33% - 10px);
+@media only screen and (max-width: 1100px) {
+  nav.menu {
+    max-width: unset;
+    width: unset;
+    display: inline-block;
   }
 
-  nav .site-nav section:nth-child(3n + 1) {
-    clear: left;
-  }
-}
-
-@media (max-width: 500px) and (min-width: 351px) {
-  nav .site-nav section {
-    width: calc(50% - 10px);
+  #TableOfContents > ul {
+    columns: 1;
   }
 
-  nav .site-nav section:nth-child(2n + 1) {
-    clear: left;
+  main {
+    display: inline-block;
+    max-width: 100%;
+    width: unset;
+  }
+
+  main > * {
+    max-width: 100%;
   }
 }
 
