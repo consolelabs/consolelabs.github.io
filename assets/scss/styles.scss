@@ -109,6 +109,7 @@ nav.menu {
   max-width: var(--nav-sidebar-width);
   line-height: 22px;
   margin-top: -2px;
+  white-space: nowrap;
 }
 
 nav .site-nav {
@@ -219,10 +220,17 @@ td:has(img) {
 }
 
 #TableOfContents li {
+  white-space: nowrap;
   list-style-type: decimal-leading-zero;
   list-style-position: inside;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#TableOfContents li:hover {
+  overflow: unset;
+  width: 100%;
+  z-index: 10;
 }
 
 .notice {
@@ -363,14 +371,6 @@ a:visited {
 
   main > blockquote {
     border-color: white;
-  }
-
-  ul li a {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: calc(var(--nav-sidebar-width) + var(--nav-sidebar-offset));
-    background-color: black;
   }
 
   ul li a {
