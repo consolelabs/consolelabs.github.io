@@ -5,6 +5,7 @@
     {{ $favicon16 := resources.Get "favicon-16x16.png" }}
     {{ $favicon32 := resources.Get "favicon-32x32.png" }}
     {{ $appleTouchIcon := resources.Get "apple-touch-icon.png" }}
+    {{ $whiteImage := resources.Get "img/ConsoleLabs_logo_1.jpg" }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ with .Site.Params.author }}{{ . }}{{ end }}" />
@@ -12,7 +13,7 @@
     <meta name="keywords" content="{{ .Site.Params.tags }}">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:image" content="{{ $favicon32.Permalink }}" />
+    <meta property="og:image" content="{{ $whiteImage.Permalink }}" />
     <link rel="icon" type="image/x-icon" href="{{ $favicon.Permalink }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon16.Permalink }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon32.Permalink }}">
