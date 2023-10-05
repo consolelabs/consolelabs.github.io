@@ -63,7 +63,8 @@ pre {
   padding: 15px;
   border-radius: 2px;
   overflow-x: scroll;
-  width: calc(100% - 30px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 pre > code {
@@ -146,7 +147,8 @@ nav.menu ul {
 /* Header, main and footer */
 main {
   padding: var(--main-padding);
-  max-width: calc(100% - (var(--main-padding) * 2));
+  max-width: 100%;
+  box-sizing: border-box;
   float: left;
 }
 
@@ -213,6 +215,7 @@ td:has(img) {
 #TableOfContents > ul {
   display: grid;
   column-gap: var(--column-gap);
+  box-sizing: border-box;
   grid-template-columns: repeat(auto-fill, minmax(var(--nav-sidebar-width), calc(50% - var(--column-gap))));
   line-height: 20px;
 }
@@ -400,7 +403,8 @@ a:visited {
   }
 
   nav.menu {
-    max-width: calc(100% - (var(--main-padding) * 2));;
+    max-width: 100%;
+    box-sizing: border-box;
     display: inline-block;
   }
 
