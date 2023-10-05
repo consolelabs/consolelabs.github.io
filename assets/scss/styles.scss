@@ -225,12 +225,6 @@ td:has(img) {
   text-overflow: ellipsis;
 }
 
-#TableOfContents li:hover {
-  overflow: unset;
-  width: 100%;
-  z-index: 10;
-}
-
 .notice {
   padding: 20px;
   border: 2px solid black;
@@ -414,10 +408,6 @@ a:visited {
     display: grid;
     column-gap: var(--column-gap);
     grid-template-columns: repeat(auto-fill, minmax(var(--nav-sidebar-width), 1fr));
-  }
-
-  #TableOfContents > ul {
-    columns: 1;
   }
 
   main {
