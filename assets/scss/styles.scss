@@ -290,6 +290,11 @@ ul li a:hover {
   z-index: 10;
 }
 
+ul li p {
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+
 time {
   padding-right: 1rem;
 }
