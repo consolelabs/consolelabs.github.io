@@ -10,15 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Publish Obsidian notes to Github pages
     steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GH_PAT }}
-
       - name: Checkout contents repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_PAT }}
-          submodules: true
+          submodules: recursive
 
       - name: Cache cargo plugins
         id: cache-obsidian-export
