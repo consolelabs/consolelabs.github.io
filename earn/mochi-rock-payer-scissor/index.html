@@ -12,8 +12,7 @@ Type: `/rps new @player1 @player2 5 icy 3` to start the game!
 </code></pre><pre><code>🎉 New Rock-Paper-Scissors Game! 🎉
 When you're ready, just hit the &quot;Start&quot; button.
 Otherwise, we'll wait until there are enough players ready to join.
-</code></pre><h2 id=start-the-game><a href=#start-the-game>Start the Game <a href=#start-the-game></a></a></h2><p>Once all players accept the bet and the host starts the game, the bot will automatically run through the specified number of rounds (defaults to 3 if not specified).</p><h2 id=game-mechanics><a href=#game-mechanics>Game Mechanics <a href=#game-mechanics></a></a></h2><p>After each round, the bot will automatically calculate points for each <strong>pair</strong> of players. The point for each user is the sum of point when the user won in the pairs, point when the user lost, point when the user tie:</p><ul><li>Win: 2 points</li><li>Tie: 1 point</li><li>Loss: 0 points</li></ul><p><strong>Rock Paper Scissor Rule</strong></p><ul><li>Rock > Scissor</li><li>Scissor > Paper</li><li>Paper > Rock</li></ul><p><strong>Stimulated Example</strong>:</p><p>Players: A, B, C</p><p>Number of rounds: 3</p><p>Bet amount: 10 icy each, total pool: 30 icy</p><p><strong>Round 1</strong>:</p><ul><li>A chooses ROCK</li><li>B chooses PAPER</li><li>C chooses PAPER</li></ul><p><strong>Points after Round 1</strong>:</p><p>A: 0</p><p>B: 2</p><p>C: 2
-(A lost B and C, C tied with B and won A, B tied with C and won A)</p><p><strong>Round 2</strong>:</p><ul><li>A chooses ROCK</li><li>B chooses ROCK</li><li>C chooses PAPER</li></ul><p><strong>Points after Round 2</strong>:</p><ul><li>A: 1 (Tied with B)</li><li>B: 3 (Tied with A, but beat C in Round 1)</li><li>C: 4 (Won both rounds)</li></ul><p><strong>Round 3</strong>:</p><ul><li>A chooses PAPER</li><li>B chooses ROCK</li><li>C chooses SCISSORS</li></ul><p><strong>Points after Round 3</strong>:</p><ul><li>A: 3 (Won this round)</li><li>B: 3</li><li>C: 4</li></ul><h2 id=end-game-and-distribution><a href=#end-game-and-distribution>End Game and Distribution <a href=#end-game-and-distribution></a></a></h2><p>After all rounds, the bot will summarize the points and distribute the winnings among players, proportional to their point totals.</p><p><strong>For example</strong>:</p><p>Total icy deposited: 30 icy</p><p>Bot fee: 2% (0.6 icy)</p><p>Amount for distribution: 29.4 icy</p><p><strong>Distribution based on points</strong>:</p><ul><li>A: 3 points</li><li>B: 3 points</li><li>C: 4 points</li></ul><p><strong>Total points</strong>: 10 points</p><ul><li>A receives: ( \frac{3}{10} \times 29.4 = 8.82 ) icy</li><li>B receives: ( \frac{3}{10} \times 29.4 = 8.82 ) icy</li><li>C receives: ( \frac{4}{10} \times 29.4 = 11.76 ) icy</li></ul><h3 id=5-interface><a href=#5-interface>5/ Interface <a href=#5-interface></a></a></h3><ol><li><p>Start the game</p><p>*Note: The host is also the 1st player</p><p>This UI inclues a button: “Join”</p></li></ol><pre><code>🚀 Rock-Paper-Scissor! 🚀
+</code></pre><h2 id=start-the-game><a href=#start-the-game>Start the Game <a href=#start-the-game></a></a></h2><p>Once all players accept the bet and the host starts the game, the bot will automatically run through the specified number of rounds (defaults to 3 if not specified).</p><h2 id=game-mechanics><a href=#game-mechanics>Game Mechanics <a href=#game-mechanics></a></a></h2><p>After each round, the bot will automatically calculate points for each <strong>pair</strong> of players. The point for each user is the sum of point when the user won in the pairs, point when the user lost, point when the user tie:</p><ul><li>Win: 2 points</li><li>Tie: 1 point</li><li>Loss: 0 points</li></ul><p><strong>Rock Paper Scissor Rule</strong></p><ul><li>Rock > Scissor</li><li>Scissor > Paper</li><li>Paper > Rock</li></ul><p><strong>Stimulated Example</strong>:</p><p>Players: A, B, C</p><p>Number of rounds: 3</p><p>Bet amount: 10 icy each, total pool: 30 icy</p><p><strong>Round 1</strong>:</p><ul><li>A chooses ROCK</li><li>B chooses PAPER</li><li>C chooses PAPER</li></ul><p><strong>Points after Round 1</strong>:</p><p>A: 0</p><p>B: 2</p><p>C: 2<br>(A lost B and C, C tied with B and won A, B tied with C and won A)</p><p><strong>Round 2</strong>:</p><ul><li>A chooses ROCK</li><li>B chooses ROCK</li><li>C chooses PAPER</li></ul><p><strong>Points after Round 2</strong>:</p><ul><li>A: 1 (Tied with B)</li><li>B: 3 (Tied with A, but beat C in Round 1)</li><li>C: 4 (Won both rounds)</li></ul><p><strong>Round 3</strong>:</p><ul><li>A chooses PAPER</li><li>B chooses ROCK</li><li>C chooses SCISSORS</li></ul><p><strong>Points after Round 3</strong>:</p><ul><li>A: 3 (Won this round)</li><li>B: 3</li><li>C: 4</li></ul><h2 id=end-game-and-distribution><a href=#end-game-and-distribution>End Game and Distribution <a href=#end-game-and-distribution></a></a></h2><p>After all rounds, the bot will summarize the points and distribute the winnings among players, proportional to their point totals.</p><p><strong>For example</strong>:</p><p>Total icy deposited: 30 icy</p><p>Bot fee: 2% (0.6 icy)</p><p>Amount for distribution: 29.4 icy</p><p><strong>Distribution based on points</strong>:</p><ul><li>A: 3 points</li><li>B: 3 points</li><li>C: 4 points</li></ul><p><strong>Total points</strong>: 10 points</p><ul><li>A receives: ( \frac{3}{10} \times 29.4 = 8.82 ) icy</li><li>B receives: ( \frac{3}{10} \times 29.4 = 8.82 ) icy</li><li>C receives: ( \frac{4}{10} \times 29.4 = 11.76 ) icy</li></ul><h3 id=5-interface><a href=#5-interface>5/ Interface <a href=#5-interface></a></a></h3><ol><li><p>Start the game</p><p>*Note: The host is also the 1st player</p><p>This UI inclues a button: “Join”</p></li></ol><pre><code>🚀 Rock-Paper-Scissor! 🚀
 
 👤 Players: @player1, @player2
 
@@ -31,13 +30,11 @@ Get ready for Round 1! 🥊
 🔁 Rounds: 3
 
 Press Accept to join!
-</code></pre><p>Button: Accept, Reject</p><p>3.Notification to choose the Rock-Paper-Scissor
-3 button to choose</p><pre><code>Pick Rock-Paper-Scissor!
+</code></pre><p>Button: Accept, Reject</p><p>3.Notification to choose the Rock-Paper-Scissor<br>3 button to choose</p><pre><code>Pick Rock-Paper-Scissor!
 🪨 Rock
 📄 Paper
 ✂️ Scissor
-</code></pre><ol start=4><li>Result for each rounds
-After all users picked, send the summary into the thread where the game start.</li></ol><pre><code>🛎️ End of Round 1! 🛎️
+</code></pre><ol start=4><li>Result for each rounds<br>After all users picked, send the summary into the thread where the game start.</li></ol><pre><code>🛎️ End of Round 1! 🛎️
 
 - @player1 chose ROCK 🪨
 - @player2 chose PAPER 📄
@@ -50,8 +47,7 @@ After all users picked, send the summary into the thread where the game start.</
 - @player3: 3 points 🌟
 
 Ready for Round 2? 🔥
-</code></pre><ol start=5><li>Game end
-After all rounds, send the summary into the thread where the game start</li></ol><pre><code>🎊 Game Over! 🎊
+</code></pre><ol start=5><li>Game end<br>After all rounds, send the summary into the thread where the game start</li></ol><pre><code>🎊 Game Over! 🎊
 📊 Final Points:
 
 - @player1: 3 points 🌟
