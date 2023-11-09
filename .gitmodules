@@ -1,3 +1,4 @@
 [submodule "vault"]
 	path = vault
 	url = git@github.com:consolelabs/content.git
+	branch = main
