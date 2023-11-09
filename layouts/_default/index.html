@@ -1,3 +1,8 @@
+<script type="text/javascript">
+  const currentUrl = window.location.href;
+  window.location.replace(currentUrl + "/blog/log");
+</script>
+
 {{ partial "header.html" . }}
 
 {{ $homepage := .Site.GetPage "/blog/log" }}
