@@ -1,3 +1,5 @@
-commonmark==0.9.1
-pandas==2.1.1
-python_frontmatter==1.0.0
+python-frontmatter
+pandas
+commonmark
+fastparquet
+pyarrow

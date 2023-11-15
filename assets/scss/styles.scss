@@ -378,6 +378,23 @@ a:visited {
     border-color: white;
   }
 
+<<<<<<< Updated upstream
+  ul li a {
+    background-color: inherit;
+  }
+
+  section > ul li a {
+    background-color: inherit;
+=======
+  ul {
+    background-color: black;
+  }
+
+  ul li {
+    background-color: black;
+>>>>>>> Stashed changes
+  }
+
   ul li a {
     background-color: inherit;
   }
