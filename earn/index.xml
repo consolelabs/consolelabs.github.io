@@ -14,4 +14,18 @@ Help menu: when users enter only /deposit
 4/ Users can submit their own event, with tag local and link to join, also alert a msg to mochi discord
 5/ Expose API</description></item><item><title>Mochi BlackJack</title><link>https://log.console.so/earn/mochi-blackjack/</link><pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate><author>han@console.so (Han Ngo)</author><guid>https://log.console.so/earn/mochi-blackjack/</guid><description>Overview We are looking to develop a Blackjack game as a Discord bot. The bot will allow users to play Blackjack by interacting with it through various commands. Users will be required to transfer tokens from their wallet to the game&amp;rsquo;s wallet as a deposit to participate. The bot will manage the game logic, including dealing cards, calculating winnings, and transferring tokens back to the winner&amp;rsquo;s wallet. Below are the detailed requirements for this project.</description></item><item><title>Mochi Raycast Extension</title><link>https://log.console.so/earn/mochi-raycast-extension/</link><pubDate>Wed, 05 Apr 2023 00:00:00 +0000</pubDate><author>han@console.so (Han Ngo)</author><guid>https://log.console.so/earn/mochi-raycast-extension/</guid><description>Deadline: 5 May, 11:59 PM (Indian Standard Time)
 About the Bounty Mochi is a platform that allows Discord server owners to integrate trading supporting tools called Mochi APIs. Mochi APIs now provides Token and NFT Data query: User can query Token price, marketcap, and movement; NFT rarity and raking and sales which support the investment decision.
-Superteam is sponsoring a bounty for developers to use Mochi APIs to build a Raycast extension, which meets the following requirement: Users should be able to use the Raycast extension to query the token price, info and movement; convert token; and NFT rarity, ranking and sales.</description></item></channel></rss>
+Superteam is sponsoring a bounty for developers to use Mochi APIs to build a Raycast extension, which meets the following requirement: Users should be able to use the Raycast extension to query the token price, info and movement; convert token; and NFT rarity, ranking and sales.</description></item><item><title/><link>https://log.console.so/earn/mochi-uikit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>han@console.so (Han Ngo)</author><guid>https://log.console.so/earn/mochi-uikit/</guid><description>content github tags:
+earn blockchain web
+title: Mochi UI Kit landing
+product: [Web]
+date: 2023-12-04
+description:
+authors: minh_cloud
+menu:
+toc: false
+notice:
+bounty: $150
+due_date:
+status: Open
+PICs: []
+completion_date: Mochi UI Kit Landing (Designing - tab Marketing Website): Link</description></item></channel></rss>
