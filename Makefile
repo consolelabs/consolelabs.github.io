@@ -33,6 +33,6 @@ build-target:
 
 run-target:
 	@mkdir -p vault content
-	@rsync -avh $(path) ./vault/ --delete
+	@rsync -avh "$(path)" ./vault/ --delete
 	@obsidian-export --hard-linebreaks ./vault/ ./content/
 	@hugo -DEF server
