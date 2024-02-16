@@ -7,8 +7,14 @@
   --column-gap: 20px;
 }
 
+::selection {
+  background: white;
+  color: black;
+}
+
 /* Main */
 body {
+  position: relative;
   font: 16px sans-serif;
   color: black;
   text-rendering: optimizeLegibility;
@@ -69,10 +75,15 @@ pre {
   overflow-x: auto;
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  overflow: overlay;
+  scrollbar-width: thin;
 }
 
 pre > code {
-  display: block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  display: inline-block;
   text-indent: 0;
   white-space: inherit;
   font-weight: normal;
@@ -83,14 +94,12 @@ code {
   font-size: 12px;
   background: black;
   color: white;
-  padding: 2px 5px;
+  padding: 4px 10px;
   white-space: wrap;
   border-radius: 2px;
   font-weight: bold;
   display: inline-block;
   line-height: 16px;
-  overflow-x: scroll;
-  margin-bottom: -4px;
 }
 
 code comment {
@@ -157,6 +166,10 @@ main {
   float: left;
 }
 
+main > p {
+  margin-top: 0;
+}
+
 main > ul {
   line-height: 25px;
   margin: 0;
@@ -189,7 +202,9 @@ main > ul > li > a {
   aspect-ratio: 1 / 1;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid;
   border-collapse: collapse;
   border-spacing: 0px;
@@ -221,7 +236,10 @@ td:has(img) {
   display: grid;
   column-gap: var(--column-gap);
   box-sizing: border-box;
-  grid-template-columns: repeat(auto-fill, minmax(var(--nav-sidebar-width), calc(50% - var(--column-gap))));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--nav-sidebar-width), calc(50% - var(--column-gap)))
+  );
   line-height: 20px;
 }
 
@@ -429,7 +447,10 @@ a:visited {
   nav .site-nav {
     display: grid;
     column-gap: var(--column-gap);
-    grid-template-columns: repeat(auto-fill, minmax(var(--nav-sidebar-width), 1fr));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--nav-sidebar-width), 1fr)
+    );
   }
 
   main {
@@ -444,4 +465,60 @@ a:visited {
   ul li a {
     width: var(--nav-sidebar-width);
   }
+}
+
+.pop {
+  position: absolute;
+  display: inline-flex;
+  max-width: 20em;
+  padding: 0.75em;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  z-index: 100;
+  font-size: 12px;
+  font-style: italic;
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pop > svg {
+  width: 25px;
+  height: 25px;
+}
+
+.pop--visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pop__arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  border-style: solid;
+  border-width: 4px;
+  border-color: transparent;
+}
+
+.pop[data-popper-placement^="bottom"] {
+  margin-top: 4px;
+}
+.pop[data-popper-placement^="bottom"] .pop__arrow {
+  border-top-width: 0;
+  border-bottom-color: white;
+  top: -4px;
+  left: calc(50% - 4px);
+}
+
+.pop[data-popper-placement^="top"] {
+  margin-bottom: 4px;
+}
+.pop[data-popper-placement^="top"] .pop__arrow {
+  border-bottom-width: 0;
+  border-top-color: white;
+  bottom: -4px;
+  left: calc(50% - 4px);
 }

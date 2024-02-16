@@ -38,6 +38,9 @@
     {{ end }}
     <link rel="shortcut icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
     <script defer data-domain="log.console.so" src="https://plausible.io/js/script.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    {{ $shareScript := resources.Get "js/share.js" }}
+    <script defer src="{{ $shareScript.RelPermalink }}"></script>
     {{ $styles := resources.Get "scss/styles.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
     <style>{{ $styles.Content | safeCSS }}</style>
 
@@ -133,6 +136,10 @@
     {{ $.Scratch.Set "section" (replaceRE "^/([^/]+)/.*" "$1" .RelPermalink) }}
 
     <body class="{{ if .IsHome }}home{{ else }}{{ $.Scratch.Get "section" }}{{ end }}">
+        <a id="tooltip" class="pop" href="#">
+          <svg class="icon icon--twitter" viewBox="0 0 101.53 82.49" xmlns="http://www.w3.org/2000/svg"><path d="m91 20.62a18.68 18.68 0 0 1 .19 2.58 58.44 58.44 0 0 1 -4 20.92 66.22 66.22 0 0 1 -11.2 19 53.33 53.33 0 0 1 -18.84 14 59.6 59.6 0 0 1 -25.28 5.35 58.34 58.34 0 0 1 -31.87-9.3c1.72.13 3.37.2 5 .2a40.78 40.78 0 0 0 26-8.92 19.07 19.07 0 0 1 -12-4.07 20.6 20.6 0 0 1 -7.3-10.38 20.75 20.75 0 0 0 4.16.4 26.41 26.41 0 0 0 5.95-.6 18.82 18.82 0 0 1 -11.2-7.24 21.21 21.21 0 0 1 -4.26-13.21v-.35c0 .79.89 1.42 2.67 1.88a22.14 22.14 0 0 0 5.65.7 25.41 25.41 0 0 1 -7.53-7.58 17.48 17.48 0 0 1 -3-9.71 21.19 21.19 0 0 1 2.8-10.52 59.45 59.45 0 0 0 19.14 15.46 57.54 57.54 0 0 0 23.92 6.35 19.39 19.39 0 0 1 -.59-4.76 20 20 0 0 1 6.11-14.67 20.84 20.84 0 0 1 29.94.39 44.74 44.74 0 0 0 13.29-4.95 20.48 20.48 0 0 1 -9.32 11.5 42.27 42.27 0 0 0 12.1-3.37 45.93 45.93 0 0 1 -10.53 10.9z"></path></svg>
+          <div class="pop__arrow"></div>
+        </a>
         <header>
             {{ $image := resources.Get "img/ConsoleLabs_logo.png" }}
             <a href="/">
