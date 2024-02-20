@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
   document.addEventListener("mousedown", (e) => {
     const tooltip = document.querySelector("#tooltip");
     console.log(e.target);
