@@ -39,20 +39,24 @@ h4 {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 30px;
+  line-height: 36px;
   display: none;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 28px;
+  line-height: 34px;
 }
 
 h3 {
   font-size: 20px;
+  line-height: 24px;
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 hr {
@@ -142,7 +146,7 @@ nav .site-nav section {
 }
 
 nav .site-nav section h2 {
-  margin: 20px 0 20px 0;
+  margin: 28px 0 10px 0;
   font-size: 24px;
   text-transform: lowercase;
 }
@@ -168,11 +172,14 @@ main {
 
 main > p {
   margin-top: 0;
+  margin-bottom: 16px;
+  line-height: 24px;
 }
 
 main > ul {
   line-height: 25px;
   margin: 0;
+  margin-bottom: 16px;
 }
 
 main > ul > li > a {
@@ -263,7 +270,8 @@ main > blockquote {
 
 main > * {
   max-width: 600px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 28px;
 }
 
 header {
@@ -413,15 +421,6 @@ a:visited {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  h1,
-  h2,
-  h3,
-  h4 {
-    color: var(--primary-color-light);
-  }
-}
-
 /* Mobile */
 @media only screen and (max-width: 1100px) {
   :root {
@@ -442,6 +441,7 @@ a:visited {
     max-width: 100%;
     box-sizing: border-box;
     display: inline-block;
+    padding-bottom: 0px;
   }
 
   nav .site-nav {
@@ -454,6 +454,7 @@ a:visited {
   }
 
   main {
+    padding-top: 0px;
     display: inline-block;
     width: unset;
   }
@@ -521,4 +522,37 @@ a:visited {
   border-top-color: white;
   bottom: -4px;
   left: calc(50% - 4px);
+}
+
+@media (prefers-color-scheme: light) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--primary-color-light);
+  }
+
+  ::selection {
+    background: black;
+    color: white;
+  }
+
+  .pop {
+    background-color: black;
+    color: white;
+  }
+
+  .pop > svg {
+    width: 25px;
+    height: 25px;
+    fill: white;
+  }
+
+  .pop[data-popper-placement^="bottom"] .pop__arrow {
+    border-bottom-color: black;
+  }
+
+  .pop[data-popper-placement^="top"] .pop__arrow {
+    border-top-color: black;
+  }
 }
