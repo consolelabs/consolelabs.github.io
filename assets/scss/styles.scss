@@ -264,8 +264,9 @@ td:has(img) {
 }
 
 main > blockquote {
-  padding: 20px;
+  padding: 0px 16px;
   border: 2px solid black;
+  box-sizing: border-box;
 }
 
 main > * {
